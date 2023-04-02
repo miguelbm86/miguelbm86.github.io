@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* CSS Document */
+/* -------- FONTS -------- */
+@font-face {
+	font-family:'BandaRegularRegular';
+    src:url('../fonts/banda_regular-webfont.eot');
+    src:url('../fonts/banda_regular-webfontd41d.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/banda_regular-webfont.woff') format('woff'),
+		url('../fonts/banda_regular-webfont.ttf') format('truetype'),
+		url('../fonts/banda_regular-webfont.svg#BandaRegularRegular') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face {
+    font-family:'ChaletParisNineteenSixtyRg';
+    src:url('../fonts/chalet-parisnineteensixty-webfont.eot');
+    src:url('../fonts/chalet-parisnineteensixty-webfontd41d.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/chalet-parisnineteensixty-webfont.woff') format('woff'),
+		url('../fonts/chalet-parisnineteensixty-webfont.ttf') format('truetype'),
+		url('../fonts/chalet-parisnineteensixty-webfont.svg#ChaletParisNineteenSixtyRg') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:'OpenSansExtraboldRegular';
+    src:url('../fonts/opensans-extrabold-webfont.eot');
+    src:url('../fonts/opensans-extrabold-webfontd41d.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/opensans-extrabold-webfont.woff') format('woff'),
+		url('../fonts/opensans-extrabold-webfont.ttf') format('truetype'),
+		url('../fonts/opensans-extrabold-webfont.svg#OpenSansExtraboldRegular') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:'OpenSansRegular';
+    src:url('../fonts/opensans-regular-webfont.eot');
+    src:url('../fonts/opensans-regular-webfontd41d.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/opensans-regular-webfont.woff') format('woff'),
+		url('../fonts/opensans-regular-webfont.ttf') format('truetype'),
+		url('../fonts/opensans-regular-webfont.svg#OpenSansRegular') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-BolIta-webfont.eot');
+    src: url('../fonts/Lato-BolIta-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-BolIta-webfont.woff') format('woff'),
+         url('../fonts/Lato-BolIta-webfont.ttf') format('truetype'),
+         url('../fonts/Lato-BolIta-webfont.svg#LatoBoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Bol-webfont.eot');
+    src: url('../fonts/Lato-Bol-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-Bol-webfont.woff') format('woff'),
+         url('../fonts/Lato-Bol-webfont.ttf') format('truetype'),
+         url('../fonts/Lato-Bol-webfont.svg#LatoBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-RegIta-webfont.eot');
+    src: url('../fonts/Lato-RegIta-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-RegIta-webfont.woff') format('woff'),
+         url('../fonts/Lato-RegIta-webfont.ttf') format('truetype'),
+         url('../fonts/Lato-RegIta-webfont.svg#LatoItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Reg-webfont.eot');
+    src: url('../fonts/Lato-Reg-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-Reg-webfont.woff') format('woff'),
+         url('../fonts/Lato-Reg-webfont.ttf') format('truetype'),
+         url('../fonts/Lato-Reg-webfont.svg#LatoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Lato Light';
+    src: url('../fonts/Lato-Lig-webfont.eot');
+    src: url('../fonts/Lato-Lig-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-Lig-webfont.woff') format('woff'),
+         url('../fonts/Lato-Lig-webfont.ttf') format('truetype'),
+         url('../fonts/Lato-Lig-webfont.svg#LatoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+	font-family: 'Lato Black';
+    src: url('../fonts/Lato-Bla-webfont.eot');
+    src: url('../fonts/Lato-Bla-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-Bla-webfont.woff') format('woff'),
+         url('../fonts/Lato-Bla-webfont.ttf') format('truetype'),
+         url('../fonts/Lato-Bla-webfont.svg#LatoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato Hairline';
+    src: url('../fonts/Lato-Hai-webfont.eot');
+    src: url('../fonts/Lato-Hai-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-Hai-webfont.woff') format('woff'),
+         url('../fonts/Lato-Hai-webfont.ttf') format('truetype'),
+         url('../fonts/Lato-Hai-webfont.svg#LatoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;	
+}
+
+
+/** GOOGLE FONTS **/
+@font-face {
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Inika'), url(../fonts/BKu7l_qT90IBrcPZgEIfVQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(../fonts/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(../fonts/xjAJXh38I15wypJXxuGMBobN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald '), local('Oswald'), url(../fonts/-g5pDUSRgvxvOl5u-a_WHw.woff) format('woff');
+}
+
+@font-face {
+	font-family:'ABeeZeeregular';
+	src:url(../fonts/ABeeZee%20regular.ttf);
+	font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+	font-family:'AdventPro700';
+	src:url(../fonts/Advent%20Pro%20700.ttf);
+	font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+	font-family:'Aldrichregular';
+	src:url(../fonts/Aldrich%20regular.ttf);
+	font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+	font-family:'AlegreyaSansSCregular';
+	src:url(../fonts/Alegreya%20Sans%20SC%20regular.ttf);
+	font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+	font-family:'Antonregular';
+	src:url(../fonts/Anton%20regular.ttf);
+	font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+	font-family:'ArchivoNarrow700';
+	src:url(../fonts/Archivo%20Narrow%20700.ttf);
+	font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+	font-family:'ArchivoNarrowregular';
+	src:url(../fonts/Archivo%20Narrow%20regular.ttf);
+	font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+	font-family:'Basicregular';
+	src:url(../fonts/Basic%20regular.ttf);
+	font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+	font-family:'Cabin600';
+	src:url(../fonts/Cabin%20600.ttf);
+	font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+	font-family:'CabinCondensed600';
+	src:url(../fonts/Cabin%20Condensed%20600.ttf);
+	font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+	font-family:'CabinCondensed700';
+	src:url(../fonts/Cabin%20Condensed%20700.ttf);
+	font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+	font-family:'Cabinregular';
+	src:url(../fonts/Cabin%20regular.ttf);
+	font-weight:normal;
+    font-style:normal;
+}

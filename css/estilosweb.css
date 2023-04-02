@@ -1,0 +1,2902 @@
+@charset "utf-8";
+
+@font-face{
+	font-family:'Gotham Black';
+	src:url(../tipografias/Gotham-Black.otf) format('opentype');	
+}
+@font-face{
+	font-family:'Calibri Bold';
+	src:url(../tipografias/calibrib.ttf) format('opentype');	
+}
+@font-face{
+	font-family:'Calibri Light';
+	src:url(../tipografias/calibril.ttf) format('opentype');	
+}
+@font-face{
+	font-family:'Blackbird';
+	src:url(../tipografias/Blackbird.ttf) format('opentype');	
+}
+@font-face{
+	font-family:'Helvetica Black';
+	src:url(../tipografias/helvetica_black1.ttf) format('opentype');	
+}
+@font-face{
+	font-family:'Helvetica LT Std Roman';
+	src:url(../tipografias/HelveticaLTStdRoman.otf) format('opentype');	
+}
+@font-face{
+	font-family:'Helvetica LT Std Bold';
+	src:url(../tipografias/HelveticaLTStdBold.otf) format('opentype');	
+}|
+/* Selectores Basicos */
+header, section, article, nav, footer, aside, figure, form, div{
+	display:block;
+	margin:0;
+	padding:0;	
+}
+figure{
+	margin: 0 !important;
+}
+html, body{
+	margin:0 !important;
+	background-color: #fff !important;
+	height:100%;
+}
+*{	
+	box-sizing:border-box;
+}
+
+h1{	
+	margin:0;
+	font-weight:normal;
+}
+h2, h3, h4, h5{
+	margin:0;
+	font-weight:normal;
+	color: #000;
+}
+p{	
+	font-family:'Calibri Light', sans-serif !important;	
+	line-height:28px;
+	color:#000;
+	text-align:justify;
+	font-weight:normal;
+	margin:0;
+}
+a{		
+	text-decoration:none;	
+	margin:0 ;
+}
+a:hover{
+	text-decoration:none;	
+}
+a img{
+	border:none;
+}
+img{
+	display:block;
+	width:100%;
+	height:auto;	
+}
+ul, ol{
+	list-style:none;
+	padding:0;
+	margin:0;
+	font-size:14px;
+	color:#fff;
+}
+ul li{
+	font-family:'Calibri Light', sans-serif !important;	
+	font-size: 18;
+}
+/*--ScrollUp--*/
+#scrollUp{
+	width:50px;
+	height:50px;
+	bottom:10px;
+	right:10px;
+	background:url(../imagenes/scrollup.png);	
+}
+.negro{
+	background:#000 !important;	
+}
+
+/****************************************************/
+/****************    Estilos Menu          **********/
+/****************************************************/
+#cajamenu{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.5% 3.5%;
+}
+#logo{
+	width: 20%;
+}
+.whatsapp-idiomas{
+	width:500px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end; /*space-between*/
+}
+.whatsapp-cabecera{
+
+}
+.caja-whatsapp{
+	display: flex;
+	flex-direction: row;
+}
+.caja-whatsapp a{
+	font-family:'Helvetica LT Std Bold', sans-serif !important;	
+	font-size: 29px;
+	color: #606063;
+}
+.caja-whatsapp a i{
+	font-size: 32px;
+	color: #6D117E;
+}
+.whatsapp-cabecera p{
+	font-family:'Helvetica LT Std Roman', sans-serif !important;	
+	font-size: 21px;
+	color: #6D117E;
+}
+.caja-idiomas{
+	width: 130px;
+	display: none !important;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.caja-idiomas a{
+	width: 55px;
+	height:55px;
+	line-height: 50px;
+	border-radius: 30px;
+	border:3px solid #3399CC;
+	text-align: center;
+	color: #3399CC;
+	transition: all 0.3s;
+}
+.caja-idiomas .idioma-activo{
+	background: #3399CC;
+	color: #fff;
+}
+.caja-idiomas a:hover{
+	background: #3399CC;
+	color: #fff;
+}
+/****************************************************/
+/******************    PORTADA    *******************/
+/****************************************************/
+#banner{
+	margin: 0;
+	overflow:hidden;
+}
+/****************************************************/
+/*************  TIPO COVERTURAS HOME  ***************/
+/****************************************************/
+#tipos-coberturas{
+	background: url(../imagenes/fondo-tipos.jpg) no-repeat;
+	background-size: cover;
+	margin: 0 ;
+	padding: 5%;
+	position: relative;
+	z-index: 9999 !important;	
+}
+#tipos-coberturas h1{
+	font-family:'Helvetica LT Std Bold', sans-serif !important;	
+	font-size: 40px;
+	color: #504F51;
+	text-align: center;
+}
+.caja-titulos{
+	width: 840px;
+	display: flex;
+	flex-direction: row;	
+	align-items: center;
+	margin: auto;
+}
+.cuadrados{
+	width: 18px;
+	height: 18px;
+	background: #6D117E;
+	margin: 0 10px;
+}
+.caja-tipos-coverturas{	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 5% 0 0 0;	
+}
+.tipos{
+	width: 20%;
+	background: #fff;
+	padding: 2% 1.5%;
+	margin: 2% ;
+}
+.icono-coberturas{
+	width: 100%;
+	margin:auto;
+}
+.tipos p{
+	font-family:'Helvetica LT Std Roman', sans-serif !important;
+	font-size: 25px;
+	text-align: center;
+	color: #4F4E50;
+	margin: 20px;
+}
+.tipos a{
+	display: block;
+	width: 90%;
+	/*border:2px solid #fff;*/
+	border-radius: 10px;
+	background: #3399CC;
+	margin: auto;
+	padding: 15px 0;
+	font-family:'Helvetica LT Std Roman', sans-serif !important;
+	font-size: 25px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	transition: all 0.3s;
+}
+/****************************************************/
+/*******************  BENEFICIOS  *******************/
+/****************************************************/
+#beneficios{
+	padding: 5% 0;
+}
+#beneficios h1{
+	font-family:'Helvetica LT Std Bold', sans-serif !important;	
+	font-size: 40px;
+	color: #504F51;
+	text-align: center;
+}
+.caja-titulos-beneficios{
+	width: 560px;
+	display: flex;
+	flex-direction: row;	
+	align-items: center;
+	margin: auto;
+}
+.caja-beneficios{
+	width: 82%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.item-beneficio{
+	width: 19%;
+	margin: 4% 3% 0 3%;
+}
+.item-beneficio img{
+	width: 70%;
+	margin: auto;
+}
+.item-beneficio h3{
+	font-size:20px; 
+	text-align: center;
+	margin: 10px 0;
+}
+.item-beneficio p{
+	font-size: 15px;
+	line-height: 20px;
+	text-align: center;
+}
+.boton-brochure{
+	display: block;
+	width: 290px;
+	margin: 5% auto 0 auto;
+	padding: 20px 20px;
+	border-radius: 10px;
+	background: #3399CC;
+	color:#fff;
+}
+/****************************************************/
+/*******************  NOSOTROS  *********************/
+/****************************************************/
+#nosotros{
+	display: flex;
+	flex-direction: row;
+}
+.imagen-nosotros{
+	width: 45%;	
+	height: auto;
+	background: url(../imagenes/nosotros.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;	
+}
+.texto-nosotros{
+	width: 55%;
+	background:#800881;
+	padding: 7% 5%;
+}
+.caja-titulos-nosotros{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;	
+	align-items: center;
+	margin: 0 0 7%  0;
+}
+.caja-titulos-nosotros h1{
+	font-family:'Helvetica LT Std Bold', sans-serif !important;	
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+}
+.caja-titulos-nosotros .cuadrados{
+	background: #fff;
+}	
+.texto-nosotros p{
+	font-family:'Helvetica LT Std Roman', sans-serif !important;	
+	font-size: 20px;
+	color: #fff;
+}
+.logo-cidelsa{
+	width: 50%;
+	margin:6% auto;
+}
+/****************************************************/
+/*****************  PROYECTOS HOME  *****************/
+/****************************************************/
+.caja-titulos-proyectos{
+	width: 710px;
+	display: flex;
+	flex-direction: row;	
+	align-items: center;
+	margin: auto;
+}
+.caja-titulos-proyectos h1{
+	font-family:'Helvetica LT Std Bold', sans-serif !important;	
+	font-size: 40px;
+	color: #504F51;
+	text-align: center;
+}
+/****************************************************/
+/*****************   PIE DE PAGINA   ****************/
+/****************************************************/
+#piepagina{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch;
+	padding: 4% 9%;
+	background:#F7F7F7;
+}
+.pie-izq, .pie-centro{
+	width: 27%;
+}
+.pie-der{
+	width: 23%;
+}
+.pie-centro{
+	
+}
+.logo-pie{
+	width: 70%;
+	margin:0 0 15px 0;
+}
+.caja-titulos-pie{	
+	display: flex;
+	flex-direction: row;	
+	align-items: center;
+	margin:0 0 15px 0;
+}
+.caja-titulos-pie h3{
+	font-family:'Helvetica LT Std Bold', sans-serif !important;	
+	font-size: 22px;
+	color: #504F51;
+}
+.caja-titulos-pie .cuadrados{
+	width: 12px;
+	height: 12px;	
+}
+.caja-titulos-pie .sin-cuadrados{
+	display: none;	
+}
+.datos-pie{
+	display: flex;
+	flex-direction: column;
+}
+.datos-pie a{
+	font-size: 16px;
+	line-height: 35px;
+	color: #504F51;
+}
+
+.sangria-pie{
+	width: 40px;
+}
+.caja-sociales{
+	border-top: 2px solid #000;	
+	margin: 15px 0 0 0;
+}
+.sociales-pie{
+	width: 120px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 20px 0 0 0;
+}
+.sociales-pie li a{
+	display: block;
+	width: 50px;
+	height: 50px;
+	line-height: 48px;
+	border-radius: 25px;
+	border:2px solid #671575;
+	color: #671575;
+	font-size: 20px;
+	text-align: center;
+	margin: 0 15px 0 0;
+	transition: all 0.3s;
+}
+.sociales-pie li a:hover{
+	background: #671575;
+	color: #fff;
+}
+.menu-pie li a{
+	font-family:'Helvetica LT Std Roman', sans-serif !important;	
+	font-size: 20px;
+	color: #504F51 !important;
+	text-decoration: none;
+}
+/****************************************************/
+/*************   TIPOS DE COBERTURAS   **************/
+/****************************************************/
+#banner-interno{
+	position: relative;
+}
+.caja-titulo-cabecera{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.titulo-cabecera h1{
+	font-family:'Helvetica Black', sans-serif !important;
+	font-size: 40px;
+	text-align: center;
+	color: #fff;
+}
+.subtitulo-cabecera{
+	width: 580px;
+	margin: auto;
+	padding: 10px 0;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+}
+.subtitulo-cabecera h2{
+	font-family:'Helvetica LT Std Bold', sans-serif !important;
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+}
+.caja-tipos1, .caja-tipos2{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 6% 6% 2% 6%;
+}
+.caja-imagen-tipo1, .text-tipo1, .caja-imagen-tipo2, .text-tipo2{
+	width: 50%
+}
+.text-tipo1{
+	padding: 3% 3% 0 7%;
+}
+.text-tipo2{
+	padding: 3% 7% 0 3%;
+}
+.caja-cuadros{
+	width: 25%;
+	margin:3% auto 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.cuadros-tipos{
+	width: 10%;
+	height: 10%;
+	padding: 5%;
+	background:#56565A;
+}
+.text-tipo1 h1, .text-tipo2 h1{
+	font-family:'Helvetica LT Std Bold', sans-serif !important;
+	font-size: 40px;
+	color: #710C81;
+	margin: 0 0 5% 8%;
+}
+.text-tipo1 p, .text-tipo2 p{
+	font-size: 20px;
+}
+/****************************************************/
+/******************   VIDEOS HOME   ******************/
+/****************************************************/
+.caja-item{
+	position: relative;
+}
+.portfolio-carousel .item .caja-morado-video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgba(109, 17, 126, 0.8);
+    overflow: hidden;
+    transition: all 0.3s;
+    opacity: 1;
+}
+.caja-morado-video h4{
+	color: #fff;
+}
+.portfolio-carousel .item:hover .caja-morado-video{    
+    opacity: 0;
+}
+/****************************************************/
+/******************   CLIENTES   ********************/
+/****************************************************/
+#clientes{
+	padding: 4% 5%;
+}
+#clientes h1{
+	font-family:'Helvetica LT Std Bold', sans-serif !important;	
+	font-size: 40px;
+	color: #504F51;
+	text-align: center;
+}
+.caja-titulos-clientes{
+	width: 659px;
+	display: flex;
+	flex-direction: row;	
+	align-items: center;
+	margin: auto;
+}
+.caja-clientes{
+	margin: 5% 0 0 0;
+}
+/****************************************************/
+/*****************   GOOGLE MAPS   ****************/
+/****************************************************/
+.mapa{
+	display: block;
+	width: 100%;
+	height: 550px;
+	margin: 0 auto;
+}
+/****************************************************/
+/******************   FORMULARIO   ******************/
+/****************************************************/
+#formulario-serv{
+	padding: 7% 0 3% 0;
+}
+.formulario-contacto{
+	position: relative;
+	margin: -9% 0 0 0 !important;
+}
+.caja-formulario{
+	width: 100%;
+	background:url(../imagenes/fondo-formulario.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;	
+	padding:5% 4% 3% 4%; 
+	margin: auto;
+	display: block;
+	/*justify-content: flex-end;*/
+}
+.formulario-derecha{
+	width: 70%;
+	margin: auto;
+}
+.formulario-derecha h1{
+	font-family:'Helvetica LT Std Bold', sans-serif !important;	
+	font-size: 40px;
+	color: #fff;
+	text-align: center;
+}
+.caja-titulos-contacto{
+	width: 750px;
+	display: flex;
+	flex-direction: row;	
+	align-items: center;
+	margin: auto;
+}
+.caja-titulos-contacto .cuadrados{
+	background: #fff;
+}
+#fcontacto {
+    width: 100%;
+    margin: 2% 0;
+}
+#unacolum p {
+    color: #96999E;
+    margin: 10px 0 0 0; 
+}
+#doscolums {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+#doscolums p {
+    width: 48%;
+    color: #96999E;
+    margin: 10px 0 0 0;  
+}
+.campos {
+    width: 48%;
+    height: 45px;
+    line-height: 43px;
+    padding: 0 0 5px 10px;
+    margin: 15px 0 0 0;   
+    border: 1px solid #fff;
+    background: none;
+    font-family: 'Calibri', sans-serif !important;
+    font-size: 17px;
+    color: #fff
+}
+.mensaje{
+	width: 100%;
+    height: 150px;
+    background: none;
+    border: 1px solid #fff;
+    margin: 30px 0 0 0;
+    padding: 15px 0 0 20px;
+    font-family: 'Calibri', sans-serif !important;
+    font-size: 17px;   
+    color: #fff
+}
+.terminos2, .terminos2 a {
+	color: #fff !important;    
+}
+.boton-derecha{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+.boton{
+	background: #3399CC;
+	border:none;
+	border-radius: 5px;
+	padding: 1.5% 3%;
+	font-family:'Helvetica LT Std Bold', sans-serif !important;
+	font-size: 17px;
+	text-align: center;
+	color: #fff;
+}
+.advertencia2{
+	color: #fff !important;
+}
+/****************************************************/
+/*******************   SERVICIOS   ******************/
+/****************************************************/
+#limpieza-mantenimiento{
+	background: url(../imagenes/fondo-tipos.jpg) no-repeat;
+	background-size: cover;
+	padding: 5% 5% 0 5%;
+}
+.caja-limpieza{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0;
+
+}
+.texto-serv h1{
+	font-family:'Helvetica LT Std Bold', sans-serif !important;
+	font-size: 40px;
+	color: #504F51;
+	text-align: left;
+}
+.caja-titulos-servicios{
+	width: 650px;
+	display: flex;
+	flex-direction: row;	
+	align-items: center;
+	margin:0 0 7% 0;
+}
+.foto-serv{
+	width: 49%;
+	height: auto;
+	margin: 0 0 5% 0;
+}
+.foto-serv img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.texto-serv{
+	width: 49%;
+	padding: 0 4% 0 0;
+}
+.texto-serv p{
+	font-size: 22px;
+}
+/****************************************************/
+/*****************  PROYECTOS HOME  *****************/
+/****************************************************/
+#proyectos-home{
+	padding: 4%;
+}
+.titulo-proyecto-home{
+	width:450px;
+	margin: auto;
+}
+.titulo-proyecto-home h2{
+	font-family:'Helvetica LT Std Roman', sans-serif !important;
+	font-size: 33px;
+	text-align: center;
+}
+.titulo-proyecto-home h1{
+	font-family:'Helvetica LT Std Bold', sans-serif !important;
+	font-size: 40px;
+	text-align: center;
+}
+.titulo-proyecto-home .subrayado{
+	margin: 3% 0;
+}
+.caja-proyectos-home{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	margin: 5% 0 2% 0;
+}
+.item-proyecto-home{
+	width: 32%;
+	margin: 1.5% 0;
+	position: relative;
+}
+.item-proyecto-home img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.mas-proyectos{
+	width: 150px;
+	display: block;
+	margin: auto;
+	padding: 5px 0;
+	border: 3px solid #68127D;
+	font-family:'Helvetica LT Std Roman', sans-serif !important;
+	font-size: 16px;
+	text-align: center;
+	color: #000;
+	transition: all 0.3s;
+}
+.mas-proyectos:hover{
+	background:#68127D; 
+	color: #fff;
+}
+/****************************************************/
+/****************  PROYECTOS VIDEOS  ****************/
+/****************************************************/
+.caja-play{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display:flex;
+	justify-content: center;
+	align-items: center; 
+}
+.caja-play i{
+	font-size: 70px;
+	color: #ccc;
+}
+.ver-fotos{
+	display: block;
+	width: 200px;
+	margin: 5% auto 0 auto;
+	padding: 20px 20px;
+	border-radius: 10px;
+	background: #3399CC;
+	color:#fff;
+}
+/****************************************************/
+/*******************  CONTACTO  *********************/
+/****************************************************/
+#formulario-contacto{
+	padding: 4% 5%
+}
+.botones-oficina-almacenes{
+	display: flex;
+	flex-direction: row;	
+	margin: 0 0 6% 0;
+}
+.botones-oficina-almacenes ul{
+	width: 100%;
+}
+.botones-oficina-almacenes ul li{
+	width: 50%;
+}
+.nav-item.active{
+	position:absolute;
+	top:0;
+	right:0;
+	z-index:999 !important;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+	font-family:'Helvetica LT Std Bold', sans-serif !important;
+	font-size: 25px;
+	text-align: center;
+	background-color:#ddd !important;
+	color:#656565 !important;
+	padding: 5% 0;
+	transition:all 0.3s;	
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+	text-align: center;
+	background-color:#AAAAAA !important;
+	color:#fff !important;
+	padding: 5% 0;
+}
+.nav-item.active{
+	position:absolute;	
+	top:0;
+	right:0;
+}
+
+.caja-contacto1{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.caja-contacto2{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.formulario-izq{
+	width: 49%
+}
+.formulario-izq h3{
+	font-family:'Helvetica LT Std Roman', sans-serif !important;
+	font-size: 25px;
+	color: #4C4C4C;
+}
+.formulario-izq h4{
+	font-family:'Helvetica LT Std Bold', sans-serif !important;
+	font-size: 40px;
+	color: #800881;
+}
+.formulario-izq .campos {
+    width: 100%;
+    height: 45px;
+    line-height: 43px;
+    padding: 0 0 5px 10px;
+    margin: 15px 0 0 0;   
+    border: 1px solid #000;
+    background: none;
+    font-family: 'Calibri', sans-serif !important;
+    font-size: 17px;
+    color: #000
+}
+.formulario-izq .mensaje{
+	width: 100%;
+    height: 150px;
+    background: none;
+    border: 1px solid #000;
+    margin: 30px 0 0 0;
+    padding: 15px 0 0 20px;
+    font-family: 'Calibri', sans-serif !important;
+    font-size: 17px;   
+    color: #000
+}
+.caja-terminos-boton{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;	
+}
+.terminos {
+    width: 100%;
+    margin: 5% auto 0 auto;
+    display: flex;
+    flex-direction: row;  
+}
+.text-terminos {
+	margin-left: 8px; 
+}
+.text-terminos a {
+	color: #000;
+    font-weight: bold; 
+    text-decoration: underline !important;  
+}
+.boton-derecha{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+.formulario-izq .boton{
+	background: #3399CC;
+	border:none;
+	border-radius: 5px;
+	padding: 1.5% 20px;
+	font-family:'Helvetica LT Std Bold', sans-serif !important;
+	font-size: 17px;
+	text-align: center;
+	color: #fff;
+}
+.datos-contacto{
+	width: 49%;
+	background:#800881;
+	padding: 4%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.datos-contacto h3{
+	font-family:'Helvetica LT Std Roman', sans-serif !important;
+	font-size: 25px;
+	text-align: center;
+	color: #fff;
+}
+.datos-contacto h1{
+	font-family:'Helvetica LT Std Bold', sans-serif !important;
+	font-size: 40px;
+	text-align: center;
+	color: #fff;
+	margin: 20px 0 10px 0;
+}
+.linea-datos{
+	width: 240px;
+	height:2px;
+	background:#fff;
+	margin:10px auto 20px auto;
+}
+.datos-contacto a{
+	font-family:'Helvetica LT Std Bold', sans-serif !important;
+	font-size: 35px;
+	display: block;
+	text-align: center;
+	color: #fff;
+	margin: 10px 0;
+}
+.datos-contacto p{
+	font-family:'Helvetica LT Std Bold', sans-serif !important;
+	font-size: 25px;
+	text-align: center;
+	color: #fff;
+}
+.datos-almacenes h2{
+	font-family:'Helvetica LT Std Bold', sans-serif !important;
+	font-size: 35px;
+	color: #4C4C4C;
+}
+.datos-almacenes h5{
+	font-family:'Helvetica LT Std Bold', sans-serif !important;
+	font-size: 20px;
+	color: #800881;
+}
+.datos-almacenes p{
+	font-family:'Helvetica LT Std Roman', sans-serif !important;
+	font-size: 15px;
+	color: #4C4C4C;
+}
+/************************************************************************************/
+/*******************************ESTILOS PARA 1440 ***********************************/
+/************************************************************************************/
+@media only screen and (max-width:1440px){
+	/****************************************************/
+	/****************    Estilos Menu          **********/
+	/****************************************************/
+	#cajamenu{
+		flex-direction: row;
+		padding: 1.5% 3.5%;
+	}
+	#logo{
+		width: 20%;
+	}
+	.whatsapp-idiomas{
+		width:500px;
+		flex-direction: row;
+	}
+	.caja-whatsapp{
+		flex-direction: row;
+	}
+	.caja-whatsapp a{
+		font-size: 29px;
+	}
+	.caja-whatsapp a i{
+		font-size: 32px;
+	}
+	.whatsapp-cabecera p{
+		font-size: 21px;
+	}
+	.caja-idiomas{
+		width: 130px;
+	}
+	.caja-idiomas a{
+		width: 55px;
+		height:55px;
+		line-height: 50px;
+	}
+	/****************************************************/
+	/*************  TIPO COVERTURAS HOME  ***************/
+	/****************************************************/
+	#tipos-coberturas{
+		padding: 5%;
+	}
+	#tipos-coberturas h1{
+		font-size: 40px;
+	}
+	.caja-titulos{
+		width: 840px;
+	}
+	.cuadrados{
+		width: 18px;
+		height: 18px;
+		margin: 0 10px;
+	}
+	.caja-tipos-coverturas{	
+		flex-direction: row;
+		margin: 5% 0 0 0;	
+	}
+	.tipos{
+		width: 18%;
+		padding: 2% 1.5%;
+	}
+	.icono-coberturas{
+		width: 100%;
+	}
+	.tipos p{
+		font-size: 25px;
+		margin: 20px;
+	}
+	.tipos a{
+		width: 90%;
+		/*border:2px solid #fff;*/
+		border-radius: 10px;
+		padding: 15px 0;
+		font-size: 25px;
+	}
+	/****************************************************/
+	/*******************  BENEFICIOS  *******************/
+	/****************************************************/
+	#beneficios{
+		padding: 5% 0;
+	}
+	#beneficios h1{
+		font-size: 40px;
+	}
+	.caja-titulos-beneficios{
+		width: 560px;
+	}
+	.caja-beneficios{
+		width: 82%;
+		flex-direction: row;
+	}
+	.item-beneficio{
+		width: 19%;
+		margin: 4% 3% 0 3%;
+	}
+	.item-beneficio img{
+		width: 70%;
+	}
+	.item-beneficio h3{
+		font-size:20px; 
+		margin: 10px 0;
+	}
+	.item-beneficio p{
+		font-size: 15px;
+		line-height: 20px;
+	}
+	.boton-brochure{
+		width: 270px;
+		padding: 20px 20px;
+		border-radius: 10px;
+	}
+	/****************************************************/
+	/*******************  NOSOTROS  *********************/
+	/****************************************************/
+	#nosotros{
+		flex-direction: row;
+	}
+	.imagen-nosotros{
+		width: 45%;	
+	}
+	.texto-nosotros{
+		width: 55%;
+		padding: 7% 5%;
+	}
+	.caja-titulos-nosotros{
+		width: 100%;
+		flex-direction: row;
+		margin: 0 0 7%  0;
+	}
+	.caja-titulos-nosotros h1{
+		font-size: 30px;
+	}	
+	.texto-nosotros p{
+		font-size: 20px;
+	}
+	.logo-cidelsa{
+		width: 50%;
+		margin:6% auto;
+	}
+	/****************************************************/
+	/*****************  PROYECTOS HOME  *****************/
+	/****************************************************/
+	.caja-titulos-proyectos{
+		width: 710px;
+	}
+	.caja-titulos-proyectos h1{
+		font-size: 40px;
+	}
+	/****************************************************/
+	/*****************   PIE DE PAGINA   ****************/
+	/****************************************************/
+	#piepagina{
+		flex-direction: row;
+		padding: 4% 9%;
+	}
+	.pie-izq, .pie-centro{
+		width: 27%;
+	}
+	.pie-der{
+		width: 23%;
+	}
+	.logo-pie{
+		width: 70%;
+		margin:0 0 15px 0;
+	}
+	.caja-titulos-pie{	
+		flex-direction: row;	
+		margin:0 0 15px 0;
+	}
+	.caja-titulos-pie h3{
+		font-size: 22px;
+	}
+	.caja-titulos-pie .cuadrados{
+		width: 12px;
+		height: 12px;	
+	}
+	.datos-pie{
+		flex-direction: column;
+	}
+	.datos-pie a{
+		font-size: 16px;
+		line-height: 35px;
+	}
+	.sangria-pie{
+		width: 40px;
+	}
+	.caja-sociales{
+		margin: 15px 0 0 0;
+	}
+	.sociales-pie{
+		width: 120px;
+		flex-direction: row;
+		margin: 20px 0 0 0;
+	}
+	.sociales-pie li a{
+		width: 50px;
+		height: 50px;
+		line-height: 48px;
+		border-radius: 25px;
+		font-size: 20px;
+		margin: 0 15px 0 0;
+	}
+	.menu-pie{
+		font-size: 20px;
+	}
+	/****************************************************/
+	/*************   TIPOS DE COBERTURAS   **************/
+	/****************************************************/
+	.caja-tipos1, .caja-tipos2{
+		flex-direction: row;
+		padding: 6% 6% 2% 6%;
+	}
+	.caja-imagen-tipo1, .text-tipo1, .caja-imagen-tipo2, .text-tipo2{
+		width: 50%
+	}
+	.text-tipo1{
+		padding: 3% 3% 0 7%;
+	}
+	.text-tipo2{
+		padding: 3% 7% 0 3%;
+	}
+	.caja-cuadros{
+		width: 25%;
+		margin:3% auto 0 auto;
+	}
+	.cuadros-tipos{
+		width: 10%;
+		height: 10%;
+		padding: 5%;
+	}
+	.text-tipo1 h1, .text-tipo2 h1{
+		font-size: 40px;
+		margin: 0 0 5% 8%;
+	}
+	.text-tipo1 p, .text-tipo2 p{
+		font-size: 20px;
+	}
+	/****************************************************/
+	/******************   CLIENTES   ********************/
+	/****************************************************/
+	#clientes{
+		padding: 4% 5%;
+	}
+	#clientes h1{
+		font-size: 40px;
+	}
+	.caja-titulos-clientes{
+		width: 659px;
+		flex-direction: row;	
+	}
+	.caja-clientes{
+		margin: 5% 0 0 0;
+	}
+	/****************************************************/
+	/*****************  PROYECTOS HOME  *****************/
+	/****************************************************/
+	/*
+	#proyectos-home{
+		padding: 4%;
+	}
+	.titulo-proyecto-home{
+		width:450px;
+	}
+	*/
+	.titulo-proyecto-home h2{
+		font-size: 33px;
+	}
+	.titulo-proyecto-home h1{
+		font-size: 40px;
+	}
+	/*
+	.titulo-proyecto-home .subrayado{
+		margin: 3% 0;
+	}
+	.caja-proyectos-home{
+		flex-direction: row;
+		margin: 5% 0 2% 0;
+	}
+	.item-proyecto-home{
+		width: 32%;
+		margin: 1.5% 0;
+	}
+	*/
+	.mas-proyectos{
+		/*width: 150px;
+		padding: 5px 0;
+		border: 3px solid #68127D;*/
+		font-size: 16px;
+	}
+	/****************************************************/
+	/****************  PROYECTOS VIDEOS  ****************/
+	/****************************************************/
+	.caja-play i{
+		font-size: 70px;
+	}
+	/*
+	.ver-fotos{
+		width: 200px;
+		margin: 5% auto 0 auto;
+		padding: 20px 20px;
+		border-radius: 10px;
+	}
+	*/	
+	/****************************************************/
+	/******************   FORMULARIO   ******************/
+	/****************************************************/
+	/*
+	#formulario-serv{
+		padding: 7% 0 3% 0;
+	}
+	.caja-formulario{
+		width: 92%;
+		padding:2% 4%; 
+		justify-content: flex-end;
+	}
+	.formulario-derecha{
+		width: 70%;
+	}
+	*/
+	.formulario-derecha h1{
+		font-size: 40px;
+	}
+	/*
+	.caja-titulos-contacto{
+		width: 750px;
+	}	
+	#fcontacto {
+	    width: 100%;
+	    margin: 2% 0;
+	}
+	#unacolum p {
+	    margin: 10px 0 0 0; 
+	}
+	#doscolums {
+	    flex-direction: row;
+	}
+	#doscolums p {
+	    width: 48%;
+	    margin: 10px 0 0 0;  
+	}
+	*/
+	.campos {
+		/*
+	    width: 48%;
+	    height: 45px;
+	    line-height: 43px;
+	    padding: 0 0 5px 10px;
+	    margin: 15px 0 0 0;
+	    */
+	    font-size: 17px;
+	}
+	.mensaje{
+		/*
+		height: 150px;
+	    margin: 30px 0 0 0;
+	    padding: 15px 0 0 20px;/
+	    */
+	    font-size: 17px;   
+	}
+	.boton-derecha{
+		justify-content: flex-end;
+	}
+	.boton{
+		padding: 1% 7%;
+		font-size: 17px;
+	}
+	/****************************************************/
+	/*******************   SERVICIOS   ******************/
+	/****************************************************/
+	/*
+	#limpieza-mantenimiento{
+		padding: 5% 5% 0 5%;
+	}
+	.caja-limpieza{
+		flex-direction: row;
+	}
+	*/
+	.texto-serv h1{
+		font-size: 40px;
+	}
+	/*
+	.caja-titulos-servicios{
+		width: 650px;
+		flex-direction: row;	
+		margin:0 0 7% 0;
+	}
+	.foto-serv{
+		width: 49%;
+		margin: 0 0 5% 0;
+	}
+	.texto-serv{
+	*	width: 49%;
+		padding: 0 4% 0 0;
+	}
+	*/
+	.texto-serv p{
+		font-size: 22px;
+	}
+	/****************************************************/
+	/*******************  CONTACTO  *********************/
+	/****************************************************/
+	/*
+	#formulario-contacto{
+		padding: 4% 5%
+	}
+	.botones-oficina-almacenes{
+		flex-direction: row;	
+		margin: 0 0 6% 0;
+	}	
+	.botones-oficina-almacenes ul li{
+		width: 50%;
+	}
+	.nav-item.active{
+		position:absolute;
+		top:0;
+		right:0;
+		z-index:999 !important;
+	}
+	*/
+	.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+		font-size: 25px;
+		padding: 5% 0;
+	}
+	/*
+	.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+		padding: 5% 0;
+	}
+	.caja-contacto1{
+		flex-direction: row;
+	}
+	.caja-contacto2{
+		flex-direction: row;
+	}
+	.formulario-izq{
+		width: 49%
+	}
+	*/
+	.formulario-izq h3{
+		font-size: 25px;
+	}
+	.formulario-izq h4{
+		font-size: 40px;
+	}
+	.formulario-izq .campos {
+	    /*height: 45px;
+	    line-height: 43px;
+	    padding: 0 0 5px 10px;
+	    margin: 15px 0 0 0;*/   
+	    font-size: 17px;
+	}
+	.formulario-izq .mensaje{
+		/*height: 150px;
+	    margin: 30px 0 0 0;
+	    padding: 15px 0 0 20px;*/
+	    font-size: 17px;   
+	}
+	/*
+	.caja-terminos-boton{
+		flex-direction: row;
+	}
+	.terminos {
+	    margin: 5% auto 0 auto;
+	    flex-direction: row;  
+	}
+	.text-terminos {
+		margin-left: 8px; 
+	}
+	*/
+	.formulario-izq .boton{
+		/*border-radius: 5px;
+		padding: 1.5% 20px;*/
+		font-size: 17px;
+	}
+	/*
+	.datos-contacto{
+		width: 49%;
+		padding: 4%;
+	}
+	*/
+	.datos-contacto h3{
+		font-size: 25px;
+	}
+	.datos-contacto h1{
+		font-size: 40px;
+		/*margin: 20px 0 10px 0;*/
+	}
+	/*
+	.linea-datos{
+		width: 240px;
+		height:2px;
+		margin:10px auto 20px auto;
+	}
+	*/
+	.datos-contacto a{
+		font-size: 35px;
+		/*margin: 10px 0;*/
+	}
+	.datos-contacto p{
+		font-size: 25px;
+	}
+	.datos-almacenes h2{
+		font-size: 35px;
+	}
+	.datos-almacenes h5{
+		font-size: 20px;
+	}
+	.datos-almacenes p{
+		font-size: 15px;
+	}
+	
+}
+/************************************************************************************/
+/*******************************ESTILOS PARA 1280 ***********************************/
+/************************************************************************************/
+@media only screen and (max-width:1280px){
+	/****************************************************/
+	/****************    Estilos Menu          **********/
+	/****************************************************/
+	#cajamenu{
+		flex-direction: row;
+		padding: 1.5% 3.5%;
+	}
+	
+	.whatsapp-idiomas{
+		width:350px;
+		flex-direction: row;
+	}
+	.caja-whatsapp{
+		flex-direction: row;
+	}
+	.caja-whatsapp a{
+		font-size: 20px;
+	}
+	.caja-whatsapp a i{
+		font-size: 25px;
+	}
+	.whatsapp-cabecera p{
+		font-size: 15px;
+	}
+	.caja-idiomas{
+		width: 100px;
+	}
+	.caja-idiomas a{
+		width: 45px;
+		height:45px;
+		line-height: 42px;
+		font-size: 12px;
+	}
+	/****************************************************/
+	/*************  TIPO COVERTURAS HOME  ***************/
+	/****************************************************/
+	/*
+	#tipos-coberturas{
+		padding: 5%;
+	}
+	*/
+	#tipos-coberturas h1{
+		font-size: 30px;
+	}
+	.caja-titulos{
+		width: 635px;
+	}
+	.cuadrados{
+		width: 13px;
+		height: 13px;
+		margin: 0 10px;
+	}
+	/*
+	.caja-tipos-coverturas{	
+		flex-direction: row;
+		margin: 5% 0 0 0;	
+	}	
+	.tipos{
+		width: 18%;
+		padding: 2% 1.5%;
+	}
+	*/
+	.tipos p{
+		font-size: 20px;
+		margin: 20px;
+	}
+	.tipos a{
+		/*width: 90%;
+		border-radius: 10px;
+		padding: 15px 0;*/
+		font-size: 17px;
+	}
+	/*****************************************************/
+	/*******************  BENEFICIOS  *******************/
+	/****************************************************/
+	/*
+	#beneficios{
+		padding: 5% 0;
+	}
+	*/
+	#beneficios h1{
+		font-size: 30px;
+	}
+	.caja-titulos-beneficios{
+		width: 445px;
+	}
+	/*
+	.caja-beneficios{
+		width: 82%;
+		flex-direction: row;
+	}
+	.item-beneficio{
+		width: 19%;
+		margin: 4% 3%;
+	}
+	.item-beneficio img{
+		width: 70%;
+	}
+	*/
+	.item-beneficio h3{
+		font-size:17px; 
+		margin: 10px 0;
+	}
+	.item-beneficio p{
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.boton-brochure{
+		width: 240px;
+		padding: 20px 20px;
+		border-radius: 10px;
+		font-size: 14px;
+	}
+	/****************************************************/
+	/*******************  NOSOTROS  *********************/
+	/****************************************************/
+	/*
+	#nosotros{
+		flex-direction: row;
+	}
+	.imagen-nosotros{
+		width: 45%;	
+	}
+	.texto-nosotros{
+		width: 55%;
+		padding: 7% 5%;
+	}
+	.caja-titulos-nosotros{
+		width: 100%;
+		flex-direction: row;
+		margin: 0 0 7%  0;
+	}
+	*/
+	.caja-titulos-nosotros h1{
+		font-size: 25px;
+	}	
+	.texto-nosotros p{
+		font-size: 17px;
+	}
+	/*
+	.logo-cidelsa{
+		width: 50%;
+		margin:6% auto;
+	}
+	*/
+	/****************************************************/
+	/*****************  PROYECTOS HOME  *****************/
+	/****************************************************/
+	.caja-titulos-proyectos{
+		width: 560px;
+	}
+	.caja-titulos-proyectos h1{
+		font-size: 30px;
+	}
+	/****************************************************/
+	/*****************   PIE DE PAGINA   ****************/
+	/****************************************************/
+	#piepagina{
+		flex-direction: row;
+		padding: 4% 9%;
+	}
+	.pie-izq, .pie-centro{
+		width: 27%;
+	}
+	.pie-der{
+		width: 23%;
+	}
+	.logo-pie{
+		width: 70%;
+		margin:0 0 15px 0;
+	}
+	.caja-titulos-pie{	
+		flex-direction: row;	
+		margin:0 0 15px 0;
+	}
+	.caja-titulos-pie h3{
+		font-size: 18px;
+	}
+	.caja-titulos-pie .cuadrados{
+		width: 10px;
+		height: 10px;	
+	}
+	.datos-pie{
+		flex-direction: column;
+	}
+	.datos-pie a{
+		font-size: 15px;
+		line-height: 35px;
+	}
+	.sangria-pie{
+		width: 40px;
+	}
+	.caja-sociales{
+		margin: 15px 0 0 0;
+	}
+	.sociales-pie{
+		width: 120px;
+		flex-direction: row;
+		margin: 20px 0 0 0;
+	}
+	.sociales-pie li a{
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+		border-radius: 25px;
+		font-size: 16px;
+		margin: 0 15px 0 0;
+	}
+	.menu-pie{
+		font-size: 17px;
+	}	
+	/****************************************************/
+	/*************   TIPOS DE COBERTURAS   **************/
+	/****************************************************/
+	/*
+	.caja-tipos1, .caja-tipos2{
+		flex-direction: row;
+		padding: 6% 6% 2% 6%;
+	}
+	.caja-imagen-tipo1, .text-tipo1, .caja-imagen-tipo2, .text-tipo2{
+		width: 50%
+	}
+	.text-tipo1{
+		padding: 3% 3% 0 7%;
+	}
+	.text-tipo2{
+		padding: 3% 7% 0 3%;
+	}
+	.caja-cuadros{
+		width: 25%;
+		margin:3% auto 0 auto;
+	}
+	.cuadros-tipos{
+		width: 10%;
+		height: 10%;
+		padding: 5%;
+	}
+	*/
+	.text-tipo1 h1, .text-tipo2 h1{
+		font-size: 30px;
+		margin: 0 0 5% 8%;
+	}
+	.text-tipo1 p, .text-tipo2 p{
+		font-size: 17px;
+	}
+	/****************************************************/
+	/******************   CLIENTES   ********************/
+	/****************************************************/
+	/*
+	#clientes{
+		padding: 4% 5%;
+	}
+	*/
+	#clientes h1{
+		font-size: 30px;
+	}
+	.caja-titulos-clientes{
+		width: 525px;
+	}
+	/*
+	.caja-clientes{
+		margin: 5% 0 0 0;
+	}
+	*/
+	/****************************************************/
+	/******************   FORMULARIO   ******************/
+	/****************************************************/
+	/*
+	#formulario-serv{
+		padding: 7% 0 3% 0;
+	}
+	.caja-formulario{
+		width: 92%;
+		padding:2% 4%; 
+		justify-content: flex-end;
+	}
+	.formulario-derecha{
+		width: 70%;
+	}
+	*/
+	.formulario-derecha h1{
+		font-size: 30px;
+	}	
+	.caja-titulos-contacto{
+		width: 580px;
+	}	
+	/****************************************************/
+	/*******************   SERVICIOS   ******************/
+	/****************************************************/
+	/*
+	#limpieza-mantenimiento{
+		padding: 5% 5% 0 5%;
+	}
+	.caja-limpieza{
+		flex-direction: row;
+	}
+	*/
+	.texto-serv h1{
+		font-size: 30px;
+	}
+	/*
+	.caja-titulos-servicios{
+		width: 650px;
+		flex-direction: row;	
+		margin:0 0 7% 0;
+	}
+	.foto-serv{
+		width: 49%;
+		margin: 0 0 5% 0;
+	}
+	.texto-serv{
+		width: 49%;
+		padding: 0 4% 0 0;
+	}
+	*/
+	.texto-serv p{
+		font-size: 17px;
+	}
+	/****************************************************/
+	/*******************  CONTACTO  *********************/
+	/****************************************************/
+	/*
+	#formulario-contacto{
+		padding: 4% 5%
+	}
+	.botones-oficina-almacenes{
+		flex-direction: row;	
+		margin: 0 0 6% 0;
+	}	
+	.botones-oficina-almacenes ul li{
+		width: 50%;
+	}
+	.nav-item.active{
+		position:absolute;
+		top:0;
+		right:0;
+		z-index:999 !important;
+	}
+	*/
+	.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+		font-size: 25px;
+		padding: 5% 0;
+	}
+	/*
+	.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+		padding: 5% 0;
+	}
+	.caja-contacto1{
+		flex-direction: row;
+	}
+	.caja-contacto2{
+		flex-direction: row;
+	}
+	.formulario-izq{
+		width: 49%
+	}
+	*/
+	.formulario-izq h3{
+		font-size: 18px;
+	}
+	.formulario-izq h4{
+		font-size: 30px;
+	}
+	.formulario-izq .campos {
+	    height: 40px;
+	    line-height: 39px;
+	    padding: 0 0 5px 10px;
+	    margin: 15px 0 0 0; 
+	    font-size: 15px;
+	}
+	.formulario-izq .mensaje{
+		height: 150px;
+	    margin: 10px 0 0 0;
+	    padding: 15px 0 0 20px;
+	    font-size: 15px;   
+	}
+	/*
+	.caja-terminos-boton{
+		flex-direction: row;
+	}
+	.terminos {
+	    margin: 5% auto 0 auto;
+	    flex-direction: row;  
+	}
+	.text-terminos {
+		margin-left: 8px; 
+	}
+	*/
+	.formulario-izq .boton{
+		/*border-radius: 5px;
+		padding: 1.5% 20px;*/
+		font-size: 15px;
+	}
+	/*
+	.datos-contacto{
+		width: 49%;
+		padding: 4%;
+	}
+	*/
+	.datos-contacto h3{
+		font-size: 18px;
+	}
+	.datos-contacto h1{
+		font-size: 30px;
+		/*margin: 20px 0 10px 0;*/
+	}
+	/*
+	.linea-datos{
+		width: 240px;
+		height:2px;
+		margin:10px auto 20px auto;
+	}
+	*/
+	.datos-contacto a{
+		font-size: 27px;
+		/*margin: 10px 0;*/
+	}
+	.datos-contacto p{
+		font-size: 18px;
+	}
+	.datos-almacenes h2{
+		font-size: 27px;
+	}
+	.datos-almacenes h5{
+		font-size: 18px;
+	}
+	.datos-almacenes p{
+		font-size: 15px;
+	}
+}
+/****************************************************/
+/****************    Estilos para 1024     **********/
+/****************************************************/
+@media only screen and (max-width:1024px){	
+	/****************************************************/
+	/*************  TIPO COVERTURAS HOME  ***************/
+	/****************************************************/
+	/*
+	#tipos-coberturas{
+		padding: 5%;
+	}
+	*/
+	#tipos-coberturas h1{
+		font-size: 30px;
+	}
+	.caja-titulos{
+		width: 635px;
+	}
+	.cuadrados{
+		width: 13px;
+		height: 13px;
+		margin: 0 10px;
+	}
+	/*
+	.caja-tipos-coverturas{	
+		flex-direction: row;
+		margin: 5% 0 0 0;	
+	}	
+	.tipos{
+		width: 18%;
+		padding: 2% 1.5%;
+	}
+	*/
+	.tipos p{
+		font-size: 16px;
+		margin: 20px;
+	}
+	.tipos a{
+		/*width: 90%;
+		border-radius: 10px;
+		padding: 15px 0;*/
+		font-size: 13px;
+	}
+	
+	/****************************************************/
+	/*******************  NOSOTROS  *********************/
+	/****************************************************/
+	/*
+	#nosotros{
+		flex-direction: row;
+	}
+	.imagen-nosotros{
+		width: 45%;	
+	}
+	.texto-nosotros{
+		width: 55%;
+		padding: 7% 5%;
+	}
+	.caja-titulos-nosotros{
+		width: 100%;
+		flex-direction: row;
+		margin: 0 0 7%  0;
+	}
+	*/
+	.caja-titulos-nosotros h1{
+		font-size: 22px;
+	}	
+	.texto-nosotros p{
+		font-size: 15px;
+	}
+	/*
+	.logo-cidelsa{
+		width: 50%;
+		margin:6% auto;
+	}
+	*/
+	/****************************************************/
+	/*****************   PIE DE PAGINA   ****************/
+	/****************************************************/
+	#piepagina{
+		flex-direction: row;
+		padding: 4% 9%;
+	}
+	.pie-izq, .pie-centro{
+		width: 27%;
+	}
+	.pie-der{
+		width: 23%;
+	}
+	.logo-pie{
+		width: 70%;
+		margin:0 0 15px 0;
+	}
+	.caja-titulos-pie{	
+		flex-direction: row;	
+		margin:0 0 15px 0;
+	}
+	.caja-titulos-pie h3{
+		font-size: 15px;
+	}
+	.caja-titulos-pie .cuadrados{
+		width: 10px;
+		height: 10px;	
+	}
+	.datos-pie{
+		flex-direction: column;
+	}
+	.datos-pie a{
+		font-size: 14px;
+		line-height: 32px;
+	}
+	.sangria-pie{
+		width: 40px;
+	}
+	.caja-sociales{
+		margin: 15px 0 0 0;
+	}
+	.sociales-pie{
+		width: 120px;
+		flex-direction: row;
+		margin: 20px 0 0 0;
+	}
+	.sociales-pie li a{
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+		border-radius: 25px;
+		font-size: 16px;
+		margin: 0 15px 0 0;
+	}
+	.menu-pie{
+		font-size: 17px;
+	}
+	
+}
+/****************************************************/
+/****************    Estilos para 800      **********/
+/****************************************************/
+@media only screen and (max-width:800px){
+	/****************************************************/
+	/****************    Estilos Menu          **********/
+	/****************************************************/
+	#cajamenu{
+		flex-direction: column;
+		padding: 1.5% 3.5%;
+	}
+	#logo{
+		width: 250px;
+		order: 2;
+	}
+	.whatsapp-idiomas{
+		width:100%;
+		flex-direction: row;
+		order: 1;
+		margin: 0 0 20px 0;
+	}
+	
+	.caja-whatsapp a{
+		font-size: 15px;
+	}
+	.caja-whatsapp a i{
+		font-size: 20px;
+	}
+	.whatsapp-cabecera p{
+		font-size: 12px;
+	}
+	.caja-idiomas{
+		width: 70px;
+	}
+	.caja-idiomas a{
+		width: 30px;
+		height:30px;
+		line-height: 27px;
+		font-size: 10px;
+	}
+	/****************************************************/
+	/*************  TIPO COVERTURAS HOME  ***************/
+	/****************************************************/
+	#tipos-coberturas{
+		padding: 10%;
+	}	
+	#tipos-coberturas h1{
+		font-size: 18px;
+	}
+	.caja-titulos{
+		width: 100%;
+	}
+	.caja-titulos h1{
+		width: 100%;
+		text-align: center;
+	}
+	.cuadrados{
+		display: none;
+		width: 9px;
+		height: 9px;
+		margin: 0 3px;
+	}	
+	.caja-tipos-coverturas{	
+		flex-direction: row;
+		justify-content: center;
+		margin: 5% 0 0 0;	
+	}	
+	.tipos{
+		width: 45%;
+		padding: 4% 3%;
+		margin: 0 1.5% 4% 1.5%;
+	}
+	
+	.tipos p{
+		font-size: 16px;
+		margin: 20px;
+	}
+	.tipos a{
+		width: 70%;
+		/*border-radius: 10px;
+		padding: 15px 0;*/
+		font-size: 13px;
+	}
+	/*****************************************************/
+	/*******************  BENEFICIOS  *******************/
+	/****************************************************/	
+	#beneficios{
+		padding: 10% 0;
+	}	
+	#beneficios h1{
+		font-size: 18px;
+	}
+	.caja-titulos-beneficios{
+		width: 100%;	
+	}	
+	.caja-titulos-beneficios h1{
+		width: 100%;
+		text-align: center;
+	}
+	.caja-beneficios{
+		width: 100%;
+		flex-direction: row;
+		margin: 3% auto 0 auto;
+	}
+	.item-beneficio{
+		width: 40%;
+		margin: 4% 3%;
+	}
+	/*
+	.item-beneficio img{
+		width: 70%;
+	}
+	
+	.item-beneficio h3{
+		font-size:17px; 
+		margin: 10px 0;
+	}
+	.item-beneficio p{
+		font-size: 14px;
+		line-height: 18px;
+	}
+	*/
+	.boton-brochure{
+		/*width: 240px;
+		padding: 20px 20px;
+		border-radius: 10px;*/
+		font-size: 13px;
+		margin: 5% auto 0 auto;
+	}
+	/****************************************************/
+	/*******************  NOSOTROS  *********************/
+	/****************************************************/	
+	#nosotros{
+		flex-direction: column;
+	}
+	.imagen-nosotros{
+		width: 100%;
+		padding: 25%;
+		order: 2;	
+	}
+	.texto-nosotros{
+		width: 100%;
+		padding: 7% 5%;
+		order: 1;
+	}
+	.caja-titulos-nosotros{
+		width: 100%;
+		flex-direction: row;
+		margin: 0 0 7%  0;
+	}
+	
+	.caja-titulos-nosotros h1{
+		font-size: 20px;
+	}	
+	.texto-nosotros p{
+		font-size: 15px;
+	}	
+	.logo-cidelsa{
+		width: 70%;
+		margin:6% auto;
+	}	
+	/****************************************************/
+	/*****************  PROYECTOS HOME  *****************/
+	/****************************************************/
+	.caja-titulos-proyectos{
+		width: 100%;
+	}
+	.caja-titulos-proyectos h1{
+		width: 100%;
+		text-align: center;
+		font-size: 18px;
+	}
+	/****************************************************/
+	/*****************   PIE DE PAGINA   ****************/
+	/****************************************************/
+	#piepagina{
+		flex-direction: column;
+		padding: 4% 9%;
+	}
+	.pie-izq{
+		width: 100%;
+	}
+	.pie-centro{
+		width: 230px;
+		margin:40px auto;
+	}
+	.pie-der{
+		width: 250px;
+		margin: auto;
+	}
+	.logo-pie{
+		width: 250px;
+		margin:0 auto 5% auto;
+	}
+	.caja-titulos-pie{	
+		flex-direction: row;	
+		margin:0 0 15px 0;
+	}
+	.caja-titulos-pie h3{
+		font-size: 18px;
+	}
+	.caja-titulos-pie .cuadrados{
+		display: none;
+	}
+	
+	.datos-pie{
+		flex-direction: column;
+	}
+	.datos-pie a{
+		font-size: 15px;
+		line-height: 35px;
+	}
+	.sangria-pie{
+		width: 40px;
+	}
+	.caja-sociales{
+		margin: 15px 0 0 0;
+	}
+	.sociales-pie{
+		width: 120px;
+		flex-direction: row;
+		margin: 20px 0 0 0;
+	}
+	.sociales-pie li a{
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+		border-radius: 25px;
+		font-size: 16px;
+		margin: 0 15px 0 0;
+	}
+	.menu-pie{
+		font-size: 17px;
+	}
+	/****************************************************/
+	/*************   TIPOS DE COBERTURAS   **************/
+	/****************************************************/	
+	.titulo-cabecera h1{
+		font-size: 30px;
+	}
+	.subtitulo-cabecera{
+		width: 380px;
+		padding: 10px 0;
+	}
+	.subtitulo-cabecera h2{
+		font-size: 15px;
+	}
+	.caja-tipos1, .caja-tipos2{
+		flex-direction: column;
+		/*padding: 6% 6% 2% 6%;*/
+	}
+	.caja-imagen-tipo1, .text-tipo1, .caja-imagen-tipo2, .text-tipo2{
+		width: 100%
+	}
+	.text-tipo1{
+		padding: 7% 0;
+		order: 1;
+	}
+	.caja-imagen-tipo1{
+		order: 2;
+	}
+	.text-tipo2{
+		padding: 7% 0;
+		order: 3;
+	}
+	.caja-imagen-tipo2{
+		order: 3;
+	}
+	/*
+	.caja-cuadros{
+		width: 25%;
+		margin:3% auto 0 auto;
+	}
+	.cuadros-tipos{
+		width: 10%;
+		height: 10%;
+		padding: 5%;
+	}
+	*/	
+	.text-tipo1 h1, .text-tipo2 h1{
+		font-size: 18px;
+		margin: 0 0 5% 8%;
+	}
+	.text-tipo1 p, .text-tipo2 p{
+		font-size: 15px;
+	}
+	/****************************************************/
+	/******************   CLIENTES   ********************/
+	/****************************************************/
+	/*
+	#clientes{
+		padding: 4% 5%;
+	}
+	*/
+	#clientes h1{
+		width: 100%;
+		text-align: center;
+		font-size: 18px;
+	}
+	.caja-titulos-clientes{
+		width: 100%;
+	}
+	/*
+	.caja-clientes{
+		margin: 5% 0 0 0;
+	}
+	*/
+	/****************************************************/
+	/******************   FORMULARIO   ******************/
+	/****************************************************/
+	/*
+	#formulario-serv{
+		padding: 7% 0 3% 0;
+	}
+	*/
+	.caja-formulario{
+		/*width: 92%;*/
+		padding:4%; 
+	}	
+	.formulario-derecha{
+		width: 100%;
+	}	
+	.formulario-derecha h1{
+		width: 100%;
+		font-size: 20px;
+	}
+	.caja-titulos-contacto{
+		width: 100%;
+	}
+	/*
+	#fcontacto {
+	    width: 100%;
+	    margin: 2% 0;
+	}
+	#unacolum p {
+	    margin: 10px 0 0 0; 
+	}
+	#doscolums {
+	    flex-direction: row;
+	}
+	#doscolums p {
+	    width: 48%;
+	    margin: 10px 0 0 0;  
+	}
+	*/
+	.campos {
+		/*
+	    width: 48%;
+	    height: 45px;
+	    line-height: 43px;
+	    padding: 0 0 5px 10px;
+	    margin: 15px 0 0 0;
+	    */
+	    font-size: 17px;
+	}
+	.mensaje{
+		/*
+		height: 150px;
+	    margin: 30px 0 0 0;
+	    padding: 15px 0 0 20px;/
+	    */
+	    font-size: 17px;   
+	}
+	.boton-derecha{
+		justify-content: flex-end;
+	}
+	.boton{
+		padding: 1% 4%;
+		font-size: 15px;
+	}
+	/****************************************************/
+	/*******************   SERVICIOS   ******************/
+	/****************************************************/
+	#limpieza-mantenimiento{
+		padding: 10% 5% 0 5%;
+	}
+	.caja-limpieza{
+		flex-direction: column;
+	}	
+	.texto-serv h1{
+		font-size: 20px;
+	}	
+	.caja-titulos-servicios{
+		width: 100%;
+		margin:0 0 4% 0;
+	}
+	.foto-serv{
+		width: 100%;
+		margin: 5% 0 5% 0;
+		order: 2;
+	}
+	.texto-serv{
+		width: 100%;
+		padding: 0 4% 0 0;
+		order: 1;
+	}	
+	.texto-serv p{
+		font-size: 15px;
+	}	
+	/****************************************************/
+	/*****************  PROYECTOS FOTOS  ****************/
+	/****************************************************/
+	/*
+	#proyectos-home{
+		padding: 4%;
+	}
+	.caja-proyectos-home{
+		flex-direction: row;
+		margin: 5% 0 2% 0;
+	}
+	*/
+	.item-proyecto-home{
+		width: 48%;
+		margin: 1.5% 0;
+	}
+	/*	
+	.mas-proyectos{
+		width: 150px;
+		padding: 5px 0;
+		border: 3px solid #68127D;
+		font-size: 16px;
+	}
+	*/
+	/****************************************************/
+	/****************  PROYECTOS VIDEOS  ****************/
+	/****************************************************/
+	.caja-play i{
+		font-size: 50px;
+	}
+	/*
+	.ver-fotos{
+		width: 200px;
+		margin: 5% auto 0 auto;
+		padding: 20px 20px;
+		border-radius: 10px;
+	}
+	*/		
+	/****************************************************/
+	/*******************  CONTACTO  *********************/
+	/****************************************************/
+	#formulario-contacto{
+		padding: 10% 5%
+	}
+	/*
+	.botones-oficina-almacenes{
+		flex-direction: row;	
+		margin: 0 0 6% 0;
+	}	
+	.botones-oficina-almacenes ul li{
+		width: 50%;
+	}
+	.nav-item.active{
+		position:absolute;
+		top:0;
+		right:0;
+		z-index:999 !important;
+	}
+	*/
+	.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+		font-size: 15px;
+		padding: 5% 0;
+	}
+	/*
+	.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+		padding: 5% 0;
+	}
+	*/
+	.caja-contacto1{
+		flex-direction: column;
+	}
+	.caja-contacto2{
+		flex-direction: column;
+	}
+	.formulario-izq{
+		width: 100%;
+		order: 2
+	}
+	
+	.formulario-izq h3{
+		font-size: 14px;
+	}
+	.formulario-izq h4{
+		font-size:20px;
+	}
+	/*
+	.formulario-izq .campos {
+	    height: 35px;
+	    line-height: 35px;
+	    padding: 0 0 5px 10px;
+	    margin: 15px 0 0 0; 
+	    font-size: 15px;
+	}
+	.formulario-izq .mensaje{
+		height: 100px;
+	    margin: 10px 0 0 0;
+	    padding: 10px 0 0 10px;
+	    font-size: 15px;   
+	}
+
+	.caja-terminos-boton{
+		flex-direction: row;
+	}
+	.terminos {
+	    margin: 5% auto 0 auto;
+	    flex-direction: row;  
+	}
+	.text-terminos {
+		margin-left: 8px; 
+	}
+	*/
+	.formulario-izq .boton{
+		padding: 1.5% 15px;
+		font-size: 14px;
+	}
+	
+	.datos-contacto{
+		width: 100%;
+		padding: 4%;
+		order: 1;
+		margin: 0 0 8% 0
+	}
+	
+	.datos-contacto h3{
+		font-size: 14px;
+	}
+	.datos-contacto h1{
+		font-size: 20px;
+		/*margin: 20px 0 10px 0;*/
+	}
+	.linea-datos{
+		width: 140px;
+		height:2px;
+		margin:10px auto 10px auto;
+	}
+	
+	.datos-contacto a{
+		font-size: 20px;
+		/*margin: 10px 0;*/
+	}
+	.datos-contacto p{
+		font-size: 15px;
+	}
+	.datos-almacenes h2{
+		font-size: 20px;
+	}
+	.datos-almacenes h5{
+		font-size: 16px;
+	}
+	.datos-almacenes p{
+		font-size: 15px;
+	}
+	/****************************************************/
+	/*****************   GOOGLE MAPS   ****************/
+	/****************************************************/
+	.mapa{
+		height: 350px;
+		margin: 0 auto;
+	}
+}
+/****************************************************/
+/****************    Estilos para 603      **********/
+/****************************************************/
+@media only screen and (max-width:600px){
+	
+}
+/****************************************************/
+/****************    Estilos para 533      **********/
+/****************************************************/
+@media only screen and (max-width:533px){
+			
+}
+/****************************************************/
+/****************    Estilos para 480      **********/
+/****************************************************/
+@media only screen and (max-width:480px){
+	/****************************************************/
+	/*************  TIPO COVERTURAS HOME  ***************/
+	/****************************************************/
+	/*
+	#tipos-coberturas{
+		padding: 10%;
+	}	
+	#tipos-coberturas h1{
+		font-size: 18px;
+	}
+	.caja-titulos{
+		width: 100%;
+	}
+	.caja-titulos h1{
+		width: 100%;
+		text-align: center;
+	}
+	*/
+	.caja-tipos-coverturas{	
+		flex-direction: column;
+		margin: 10% 0 0 0;	
+	}	
+	.tipos{
+		width: 90%;
+		padding: 10% 5%;
+		margin: 0 auto 7% auto;
+	}
+	.icono-coberturas{
+		width: 70%;
+		margin: auto;
+	}
+	/*
+	.tipos p{
+		font-size: 16px;
+		margin: 20px;
+	}
+	.tipos a{
+		width: 70%;
+		font-size: 13px;
+	}
+	*/
+	/*****************************************************/
+	/*******************  BENEFICIOS  *******************/
+	/****************************************************/	
+	/*
+	#beneficios{
+		padding: 10% 0;
+	}	
+	#beneficios h1{
+		font-size: 18px;
+	}
+	.caja-titulos-beneficios{
+		width: 100%;	
+	}	
+	.caja-titulos-beneficios h1{
+		width: 100%;
+		text-align: center;
+	}
+	*/
+	.caja-beneficios{
+		width: 100%;
+		flex-direction: column;
+		margin: 3% auto 0 auto;
+	}
+	.item-beneficio{
+		width: 90%;
+		margin: 6% auto;
+	}
+	/*
+	.item-beneficio img{
+		width: 70%;
+	}
+	
+	.item-beneficio h3{
+		font-size:17px; 
+		margin: 10px 0;
+	}
+	.item-beneficio p{
+		font-size: 14px;
+		line-height: 18px;
+	}
+	*/
+	.boton-brochure{
+		/*width: 240px;
+		padding: 20px 20px;
+		border-radius: 10px;*/
+		font-size: 13px;
+		margin: 5% auto 0 auto;
+	}
+	/****************************************************/
+	/*******************  NOSOTROS  *********************/
+	/****************************************************/	
+	/*
+	.imagen-nosotros{
+		width: 100%;
+		padding: 25%;
+		order: 2;	
+	}
+	*/
+	.texto-nosotros{
+		width: 100%;
+		padding: 10% 7%;
+		order: 1;
+	}
+	/*
+	.caja-titulos-nosotros{
+		width: 100%;
+		flex-direction: row;
+		margin: 0 0 7%  0;
+	}
+	
+	.caja-titulos-nosotros h1{
+		font-size: 20px;
+	}	
+	.texto-nosotros p{
+		font-size: 15px;
+	}	
+	.logo-cidelsa{
+		width: 70%;
+		margin:6% auto;
+	}
+	*/	
+	/****************************************************/
+	/*************   TIPOS DE COBERTURAS   **************/
+	/****************************************************/	
+	.titulo-cabecera h1{
+		font-size: 22px;
+	}
+	.subtitulo-cabecera{
+		width: 270px;
+		padding: 10px 0;
+	}
+	.subtitulo-cabecera h2{
+		font-size: 14px;
+	}	
+	/****************************************************/
+	/******************   FORMULARIO   ******************/
+	/****************************************************/
+	/*
+	#formulario-serv{
+		padding: 7% 0 3% 0;
+	}
+	*/
+	.caja-formulario{
+		/*width: 92%;*/
+		padding:10% 4% 7% 4%; 
+	}
+	.formulario-derecha h1{
+		font-size: 20px;
+	}
+	
+	#fcontacto {
+	    width: 100%;
+	    /*margin: 2% 0;*/
+	}
+	/*
+	#unacolum p {
+	    margin: 10px 0 0 0; 
+	}
+	*/
+	#doscolums {
+	    flex-direction:column;
+	}
+	#doscolums p {
+	    width: 100%;
+	    /*margin: 10px 0 0 0;*/  
+	}
+	
+	.campos {		
+	    width: 100%;
+	    height: 38px;
+	    line-height: 37px;
+	    /*
+	    padding: 0 0 5px 10px;
+	    margin: 15px 0 0 0;
+	    */
+	    font-size: 15px;
+	}
+	.mensaje{
+		height: 120px;
+	    margin: 10px 0 0 0;
+	    /*padding: 15px 0 0 20px;*/	    
+	    font-size: 15px;   
+	}
+	.boton{
+		padding: 1% 7%;
+		font-size: 15px;
+	}
+	/****************************************************/
+	/*****************  PROYECTOS FOTOS  ****************/
+	/****************************************************/
+	#proyectos-home{
+		padding: 8% 6%;
+	}
+	.caja-proyectos-home{
+		flex-direction: column;
+		/*margin: 5% 0 2% 0;*/
+	}
+	
+	.item-proyecto-home{
+		width: 100%;
+		/*margin: 1.5% 0;*/
+	}
+	/*	
+	.mas-proyectos{
+		width: 150px;
+		padding: 5px 0;
+		border: 3px solid #68127D;
+		font-size: 16px;
+	}
+	*/
+	/****************************************************/
+	/****************  PROYECTOS VIDEOS  ****************/
+	/****************************************************/
+	/*
+	.caja-play i{
+		font-size: 50px;
+	}
+	
+	.ver-fotos{
+		width: 200px;
+		margin: 5% auto 0 auto;
+		padding: 20px 20px;
+		border-radius: 10px;
+	}
+	*/		
+	/****************************************************/
+	/*****************   GOOGLE MAPS   ****************/
+	/****************************************************/
+	.mapa{
+		height: 250px;
+	}
+}
+/****************************************************/
+/****************    Estilos para 375      **********/
+/****************************************************/
+@media only screen and (max-width:375px){
+	
+}
+/****************************************************/
+/****************    Estilos para 360      **********/
+/****************************************************/
+@media only screen and (max-width:360px){
+	
+	
+	
+}
+/****************************************************/
+/****************    Estilos para 320      **********/
+/****************************************************/
+@media only screen and (max-width:320px){
+	
+	
+}

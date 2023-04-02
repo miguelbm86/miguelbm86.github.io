@@ -1,0 +1,1897 @@
+@charset "utf-8";
+
+@font-face{
+	font-family:'Gotham Black';
+	src:url(../tipografias/Gotham-Black.otf) format('opentype');	
+}
+@font-face{
+	font-family:'Calibri Bold';
+	src:url(../tipografias/calibrib.ttf) format('opentype');	
+}
+@font-face{
+	font-family:'Calibri Light';
+	src:url(../tipografias/calibril.ttf) format('opentype');	
+}
+@font-face{
+	font-family:'Blackbird';
+	src:url(../tipografias/Blackbird.ttf) format('opentype');	
+}
+@font-face{
+	font-family:'Helvetica LT Std Roman';
+	src:url(../tipografias/HelveticaLTStdRoman.otf) format('opentype');	
+}
+@font-face{
+	font-family:'Helvetica LT Std Bold';
+	src:url(../tipografias/HelveticaLTStdBold.otf) format('opentype');	
+}|
+/* Selectores Basicos */
+header, section, article, nav, footer, aside, figure, form, div{
+	display:block;
+	margin:0;
+	padding:0;	
+}
+html, body{
+	margin:0 !important;
+	background-color: #fff !important;
+	height:100%;
+}
+*{	
+	box-sizing:border-box;
+}
+
+h1{	
+	margin:0;
+	font-weight:normal;
+}
+h2, h3, h4, h5{
+	margin:0;
+	font-weight:normal;
+	color: #000;
+}
+p{	
+	font-family:'Calibri Light', sans-serif !important;	
+	line-height:28px;
+	color:#000;
+	text-align:justify;
+	font-weight:normal;
+	margin:0;
+}
+a{		
+	text-decoration:none;	
+	margin:0 ;
+}
+a:hover{
+	text-decoration:none;	
+}
+a img{
+	border:none;
+}
+img{
+	display:block;
+	width:100%;
+	height:auto;	
+}
+ul, ol{
+	list-style:none;
+	padding:0;
+	margin:0;
+	font-size:14px;
+	color:#fff;
+}
+ul li{
+	font-family:'Calibri Light', sans-serif !important;	
+	font-size: 18;
+}
+/*--ScrollUp--*/
+#scrollUp{
+	width:50px;
+	height:50px;
+	bottom:10px;
+	right:10px;
+	background:url(../imagenes/scrollup.png);	
+}
+.negro{
+	background:#000 !important;	
+}
+
+/****************************************************/
+/****************    Estilos Menu          **********/
+/****************************************************/
+#contenedormenu{
+	width:100%;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;	
+	background:#fff;	
+	padding: 1% 5%;	
+	position: absolute;
+	top:3%;
+	left: 0;
+	z-index: 999;	
+}
+#logo{
+	display:block;
+	width:18%;	
+}
+#cajamenu{
+	width:65%;
+	margin:0;
+	display:flex;
+	flex-direction:column;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+#menu{
+	width:100%;
+}
+
+.icon-home{
+	font-size: 33px;
+	color:#68127D;
+}
+.botones-grises{
+	width:83%;
+	height: 50px;
+	display:flex;
+	flex-direction:row;	
+	align-items:center;
+	background:#727176;
+	padding: 0 0 0 2%;
+}
+.botones-grises a{
+	width: 100%;
+	display:flex;
+	flex-direction:row;
+	align-items: center;	
+	padding: 5px 0;
+}
+.botones-grises a i{
+	background: #fff;
+	border-radius: 60px;
+	font-size:37px !important;
+	padding: 3%;
+	margin:0 5% 0 0;
+}
+.botones-grises a p{
+	font-family:'Helvetica LT Std Bold', sans-serif !important;
+	font-size:22px !important;
+	margin:0;
+	color:#fff;	
+}
+.iconos-contacto{
+	width: 18%;
+	border-radius: 60px;
+	background: #fff;
+	padding: 3%
+}
+.iconos-contacto img{
+	z-index: 99;
+}
+/****************************************************/
+/******************    PORTADA    *******************/
+/****************************************************/
+#banner{
+	margin: 0;
+	overflow:hidden;
+}
+/****************************************************/
+/*************  TIPO COVERTURAS HOME  ***************/
+/****************************************************/
+#tipos-coberturas{
+	background: #727176;
+	margin: -6% 4% 0 4% !important;
+	padding: 5% 0;
+	position: relative;
+	z-index: 9999 !important;	
+}
+.titulo-covertura-home{
+	width: 60%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+}
+.titulo-covertura-home h1{
+	font-family:'Helvetica LT Std Bold', sans-serif !important;	
+	font-size: 40px;
+	color: #fff;
+}
+.logo-blanco{
+	width: 30%;
+}
+.logo-blanco img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.caja-tipos-coverturas{
+	width: 75%;
+	margin: 5% auto 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.tipos{
+	width: 17%;
+}
+.tipos p{
+	font-family:'Helvetica LT Std Roman', sans-serif !important;
+	font-size: 25px;
+	text-align: center;
+	color: #fff;
+	margin: 20px;
+}
+.tipos a{
+	display: block;
+	width: 100%;
+	border:2px solid #fff;
+	padding: 10px 0;
+	font-family:'Helvetica LT Std Roman', sans-serif !important;
+	font-size: 25px;
+	text-align: center;
+	color: #fff;
+	transition: all 0.3s;
+}
+.tipos a:hover{
+	background: #fff;
+	color: #727176;
+}
+/****************************************************/
+/************  COBERTURAS INDUSTRIALESS  ************/
+/****************************************************/
+#coberturas-industriales{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 4%;
+}
+.izq-industriales{
+	width: 47%;
+}
+.indrustriales-foto{
+	margin: 0 0 5% 0;
+}
+.der-industriales{
+	width: 47%;
+}
+.logo-industrial{
+	width: 95%;
+	margin: 5% 0 0 0;
+}
+.titulo-industrial h1{
+	font-family:'Helvetica LT Std Bold', sans-serif !important;
+	font-size: 40px;
+}
+.der-industriales p{
+	font-size: 18px;
+	margin: 5% 0 0 0;
+}
+.subrayado{
+	width: 100%;
+	height: 5px;
+	background:#68127D;
+	margin: 6% 0;
+}
+/****************************************************/
+/*****************  CARACTERISTICAS  ****************/
+/****************************************************/
+#caracteristicas{
+	display: flex;
+	flex-direction:row;
+	justify-content: space-between;
+	background: #727176;
+	padding: 3%;
+}
+.colum-caracteristicas{
+	width: 30%;
+}
+.subtitulo-home{
+	display: flex;
+	flex-direction:row;
+	align-items: center;
+	margin: 0 0 5% 0;
+}
+.subtitulo-home h2{
+	font-family:'Calibri Bold', sans-serif !important;
+	font-size: 25px;
+	color: #fff;
+}
+.icono-subtitulo{
+	width: 12%;
+	margin: 0 0 0 10px;
+}
+.icono-subtitulo img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.colum-caracteristicas p{
+	font-size: 18px;
+	color: #fff;
+}
+.caja-iconos-carac{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 10% 0 0 0;
+}
+.item-icono-carac{
+	width: 25.7%;
+}
+.item-icono-carac p{
+	text-align: center;
+}
+.estructura-metalica{
+	list-style: square;
+}
+.estructura-metalica li{	
+	margin: 0 0 30px 0;
+}
+/****************************************************/
+/*****************  PROYECTOS HOME  *****************/
+/****************************************************/
+#proyectos-home{
+	padding: 4%;
+}
+.titulo-proyecto-home{
+	width:450px;
+	margin: auto;
+}
+.titulo-proyecto-home h2{
+	font-family:'Helvetica LT Std Roman', sans-serif !important;
+	font-size: 33px;
+	text-align: center;
+}
+.titulo-proyecto-home h1{
+	font-family:'Helvetica LT Std Bold', sans-serif !important;
+	font-size: 40px;
+	text-align: center;
+}
+.titulo-proyecto-home .subrayado{
+	margin: 3% 0;
+}
+.caja-proyectos-home{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	margin: 5% 0 2% 0;
+}
+.item-proyecto-home{
+	width: 32%;
+	margin: 1.5% 0;
+}
+.item-proyecto-home img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.mas-proyectos{
+	width: 150px;
+	display: block;
+	margin: auto;
+	padding: 5px 0;
+	border: 3px solid #68127D;
+	font-family:'Helvetica LT Std Roman', sans-serif !important;
+	font-size: 16px;
+	text-align: center;
+	color: #000;
+	transition: all 0.3s;
+}
+.mas-proyectos:hover{
+	background:#68127D; 
+	color: #fff;
+}
+/****************************************************/
+/********************   VIDEOS   ********************/
+/****************************************************/
+#videos-home{
+	padding: 4%;
+	background: #727176;
+}
+#videos-home h1{
+	font-family:'Helvetica LT Std Roman', sans-serif !important;
+	font-size: 40px;
+	text-align: center;
+	color: #fff;
+}
+.caja-videos-home{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 3% 0 0 0;
+}
+.item-video{
+	width: 32%;
+	border:10px solid #fff;
+	position: relative;
+}
+.play{
+	display: block;
+	width: 70px;
+	height: 70px;
+	border-radius: 40px;
+	background: #fff;
+	position: absolute;
+	top: 35%;
+	left: 40%;
+	font-size: 28px;
+	text-align: center;
+	line-height: 70px;
+	color: #68127D;	
+}
+/****************************************************/
+/******************   CLIENTES   ********************/
+/****************************************************/
+#clientes{
+	padding: 4% 5%;
+}
+#clientes h1{
+	font-family:'Helvetica LT Std Roman', sans-serif !important;
+	text-align: center;
+	font-size: 40px;
+}
+.caja-clientes{
+	margin: 5% 0 0 0;
+}
+/****************************************************/
+/*****************   GOOGLE MAPS   ****************/
+/****************************************************/
+.mapa{
+	display: block;
+	width: 100%;
+	height: 700px;
+	margin: 0 auto;
+
+}
+/****************************************************/
+/*****************   PIE DE PAGINA   ****************/
+/****************************************************/
+#piepagina{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 4% 2%;
+}
+.pie-izq, .pie-centro, .pie-der{
+	width: 26%;
+}
+.pie-centro{
+	padding: 4% 0 0 0;
+}
+.logo-pie{
+	width: 70%
+}
+.datos-pie{
+	list-style: none;
+}
+.datos-pie li{
+	font-size: 20px;
+	line-height: 35px;
+}
+.datos-pie li i{
+	margin-right:5px;
+	color: #671575;
+}
+.sangria-pie{
+	margin-left:35px; 
+}
+.sociales-pie{
+	width: 120px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 45% 0 0 0;
+}
+.sociales-pie li a{
+	background: #671575;
+	color: #fff;
+	font-size: 20px;
+}
+/****************************************************/
+/*******************   SERVICIOS   ******************/
+/****************************************************/
+#limpieza-mantenimiento{
+	padding: 5% 0 0 4%;
+}
+.titulo-servicio{
+	width:580px;
+	margin: 0 auto 5% auto;
+}
+.titulo-servicio .subrayado{
+	margin: 3% 0;
+}
+.titulo-servicio h2{
+	font-family:'Helvetica LT Std Roman', sans-serif !important;
+	font-size: 33px;
+	text-align: center;
+}
+.titulo-servicio h1{
+	font-family:'Helvetica LT Std Bold', sans-serif !important;
+	font-size: 40px;
+	text-align: center;
+}
+.caja-limpieza{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 7% 0 0 0;
+}
+.foto-serv{
+	width: 49%;
+	height: auto;
+	margin: 0 0 5% 0;
+}
+.foto-serv img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.texto-serv{
+	width: 49%;
+	padding: 0 4% 0 0;
+}
+.subtitulo-servicio h1{
+	font-family:'Helvetica LT Std Bold', sans-serif !important;
+	font-size: 40px;
+	text-transform: initial;
+}
+.texto-serv p{
+	font-size: 22px;
+}
+.caja-tipos2{	
+	margin: 0 4% 5% 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.foto-serv2{
+	width: 48%;
+	margin: 0.5% 0;
+}
+/****************************************************/
+/******************   FORMULARIO   ******************/
+/****************************************************/
+#formulario-serv{
+	padding: 7% 0 3% 0;
+}
+.formulario-contacto{
+	position: relative;
+	margin: -9% 0 0 0 !important;
+}
+.caja-formulario{
+	width: 92%;
+	background:url(../imagenes/fondo-formulario.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;	
+	padding:2% 4%; 
+	margin: auto;
+	display: flex;
+	justify-content: flex-end;
+}
+.formulario-derecha{
+	width: 70%;
+}
+.formulario-derecha h1{
+	font-family:'Helvetica LT Std Bold', sans-serif !important;
+	font-size: 40px;
+	text-align: center;
+	color: #fff;
+}
+#fcontacto {
+    width: 100%;
+    margin: 2% 0;
+}
+#unacolum p {
+    color: #96999E;
+    margin: 10px 0 0 0; 
+}
+#doscolums {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+#doscolums p {
+    width: 48%;
+    color: #96999E;
+    margin: 10px 0 0 0;  
+}
+.campos {
+    width: 48%;
+    height: 45px;
+    line-height: 43px;
+    padding: 0 0 5px 10px;
+    margin: 15px 0 0 0;
+   
+    border: 1px solid #fff;
+    background: none;
+    font-family: 'Calibri', sans-serif !important;
+    font-size: 17px;
+    color: #fff
+}
+
+.mensaje{
+	width: 100%;
+    height: 150px;
+    background: none;
+    border: 1px solid #fff;
+    margin: 30px 0 0 0;
+    padding: 15px 0 0 20px;
+    font-family: 'Calibri', sans-serif !important;
+    font-size: 17px;   
+    color: #fff
+}
+.boton-derecha{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+.boton{
+	background: #fff;
+	border-radius: 5px;
+	padding: 1% 7%;
+	font-family:'Helvetica LT Std Bold', sans-serif !important;
+	font-size: 17px;
+	text-align: center;
+	color: #000;
+}
+/****************************************************/
+/*************   TIPOS DE COBERTURAS   **************/
+/****************************************************/
+.titulo-tipos{
+	background:#727176;
+	padding: 2% 5%; 
+}
+.titulo-tipos h1{
+	font-family:'Helvetica LT Std Bold', sans-serif !important;
+	font-size: 40px;
+	text-align: center;
+	color: #fff;
+}
+.caja-tipos{
+	margin: 0;
+}
+.text-tipo{
+	margin: 5% 0 0 0;
+}
+#usos{
+	background:#727176;
+	padding: 2% 5%; 
+}
+#usos h1{
+	font-family:'Helvetica LT Std Bold', sans-serif !important;
+	font-size: 40px;
+	text-align: center;
+	color: #fff;
+}
+.caja-usos{
+	width: 75%;
+	margin:2% auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.uso-cobertura{
+	width: 30%;
+}
+.caja-usos2{
+	width: 60%;
+	margin:2% auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.uso-cobertura2{
+	width: 38%;
+	margin: 2% 0;
+}
+.icono-tipos{
+	width: 50%;
+	margin: auto;
+}
+.uso-cobertura h4{
+	text-align: center;
+	color: #fff;
+	margin: 10px 0 0 0;
+}
+.uso-cobertura2 h4{
+	text-align: center;
+	color: #fff;
+	margin: 10px 0 0 0;
+}
+.caja-form-tipos{
+	width: 100%;
+}
+
+.titulo-deltaspan{
+	width:680px !important;
+	margin: 0 auto 5% auto;
+}
+.titulo-servicio .subrayado{
+	margin: 3% 0;
+}
+.titulo-servicio h1{
+	font-family:'Helvetica LT Std Bold', sans-serif !important;
+	font-size: 40px;
+	text-align: center;
+}
+/****************************************************/
+/*************   COBERTURAS CIDELSA   **************/
+/****************************************************/
+#cidelsa{
+	padding: 5%;
+}
+.logo-cidelsa{
+	width: 80%;
+	margin: 0 auto 4% auto;
+}
+#cidelsa p{
+	font-size: 21px;
+	text-align: center;
+}
+/************************************************************************************/
+/*******************************ESTILOS PARA 1440 ***********************************/
+/************************************************************************************/
+@media only screen and (max-width:1440px){
+	/****************************************************/
+	/***************    Estilos Menu          **********/
+	/****************************************************/
+	#contenedormenu{		
+		flex-direction:row;
+		padding: 1% 5%;			
+	}
+	#logo{		
+		width:18%;	
+	}
+	#cajamenu{
+		width:65%;
+		/*
+		justify-content: flex-end;
+		align-items: flex-end;
+		*/
+	}	
+	.botones-grises{
+		width:83%;
+		height: 50px;
+		flex-direction:row;	
+		padding: 0 0 0 2%;
+	}
+	.botones-grises a{
+		flex-direction:row;
+		padding: 5px 0;
+	}
+	.botones-grises a i{
+		font-size:32px !important;
+	}
+	.botones-grises a p{
+		font-size: 16px !important;
+	}
+	/****************************************************/
+	/*************  TIPO COVERTURAS HOME  ***************/
+	/****************************************************/
+	/*
+	#tipos-coberturas{
+		margin: -3% 4% 0 4%;
+		padding: 5% 0;
+	}
+	.titulo-covertura-home{
+		width: 60%;
+		flex-direction: row;
+		align-items: baseline;
+	}
+	*/
+	.titulo-covertura-home h1{
+		font-size: 40px;
+	}
+	/*
+	.logo-blanco{
+		width: 30%;
+	}
+	.caja-tipos-coverturas{
+		width: 75%;
+		margin: 5% auto 0 auto;
+		flex-direction: row;
+	}
+	.tipos{
+		width: 17%;
+	}
+	*/
+	.tipos p{
+		font-size: 20px;
+		margin: 20px;
+	}
+	.tipos a{
+		padding: 10px 0;
+		font-size: 20px;
+	}
+	/****************************************************/
+	/*****************  CARACTERISTICAS  ****************/
+	/****************************************************/
+	#caracteristicas{
+		flex-direction:row;
+		padding: 3%;
+	}
+	.colum-caracteristicas{
+		width: 30%;
+	}
+	.subtitulo-home{
+		flex-direction:row;
+		margin: 0 0 5% 0;
+	}
+	.subtitulo-home h2{
+		font-size: 25px;
+	}
+	.icono-subtitulo{
+		width: 12%;
+		/*margin: 0 0 0 10px;*/
+	}
+	.colum-caracteristicas p{
+		font-size: 18px;
+	}
+	.caja-iconos-carac{
+		flex-direction: row;
+		/*margin: 10% 0 0 0;*/
+	}
+	.item-icono-carac{
+		width: 25.7%;
+	}
+	.estructura-metalica li{
+		font-size: 18px;
+		/*margin: 0 0 30px 0;*/
+	}
+	/****************************************************/
+	/*******************   SERVICIOS   ******************/
+	/****************************************************/
+	/*
+	#limpi/eza-mantenimiento{
+		padding: 5% 0 0 4%;
+	}
+	.titulo-servicio{
+		width:580px;
+		margin: 0 auto 5% auto;
+	}
+	.titulo-servicio .subrayado{
+		margin: 3% 0;
+	}
+	*/
+	.titulo-servicio h2{		
+		font-size: 33px;		
+	}
+	.titulo-servicio h1{		
+		font-size: 40px;
+	}
+	/*
+	.caja-limpieza{
+		flex-direction: row;
+	}
+	.foto-serv{
+		width: 49%;
+		margin: 0 0 5% 0;
+	}
+	.texto-serv{
+		width: 49%;
+		padding: 0 4% 0 0;
+	}
+	*/
+	.subtitulo-servicio h1{
+		font-size: 40px;
+	}
+	.texto-serv p{
+		font-size: 22px;
+	}
+	/****************************************************/
+	/******************   FORMULARIO   ******************/
+	/****************************************************/
+	/*
+	#formulario-serv{
+		padding: 7% 0 3% 0;
+	}
+	.caja-formulario{
+		width: 92%;
+		padding:2% 4%; 
+		justify-content: flex-end;
+	}
+	.formulario-derecha{
+		width: 70%;
+	}
+	*/
+	.formulario-derecha h1{
+		font-size: 40px;
+	}
+	/*
+	#fcontacto {
+	    width: 100%;
+	    margin: 2% 0;
+	}
+	#unacolum p {
+	    margin: 10px 0 0 0; 
+	}
+	#doscolums {
+	    flex-direction: row;
+	}
+	#doscolums p {
+	    width: 48%;
+	    margin: 10px 0 0 0;  
+	}
+	*/
+	.campos {
+		/*
+	    width: 48%;
+	    height: 45px;
+	    line-height: 43px;
+	    padding: 0 0 5px 10px;
+	    margin: 15px 0 0 0;
+	    */
+	    font-size: 17px;
+	}
+	.mensaje{
+		/*
+		height: 150px;
+	    margin: 30px 0 0 0;
+	    padding: 15px 0 0 20px;/
+	    */
+	    font-size: 17px;   
+	}
+	.boton-derecha{
+		justify-content: flex-end;
+	}
+	.boton{
+		padding: 1% 7%;
+		font-size: 17px;
+	}
+	/****************************************************/
+	/*************   TIPOS DE COBERTURAS   **************/
+	/****************************************************/
+	#usos{
+		padding: 2% 5%; 
+	}
+	#usos h1{
+		font-size: 40px;
+	}
+	.caja-usos{
+		width: 75%;
+		margin:2% auto;
+		flex-direction: row;
+	}
+	.uso-cobertura{
+		width: 30%;
+	}
+	.caja-usos2{
+		width: 60%;
+		margin:2% auto;
+		flex-direction: row;
+	}
+	.uso-cobertura2{
+		width: 38%;
+	}
+	.icono-tipos{
+		width: 50%;
+	}
+	.uso-cobertura h4{
+		margin: 10px 0 0 0;
+	}
+	
+}
+/************************************************************************************/
+/*******************************ESTILOS PARA 1280 ***********************************/
+/************************************************************************************/
+@media only screen and (max-width:1280px){
+	/****************************************************/
+	/*************  TIPO COVERTURAS HOME  ***************/
+	/****************************************************/
+	.tipos p{
+		font-size: 18px;
+		margin: 20px;
+	}
+	.tipos a{
+		padding: 10px 0;
+		font-size: 18px;
+	}
+	/****************************************************/
+	/*****************  CARACTERISTICAS  ****************/
+	/****************************************************/
+	.subtitulo-home h2{
+		font-size: 22px;
+	}
+}
+/****************************************************/
+/****************    Estilos para 1024     **********/
+/****************************************************/
+@media only screen and (max-width:1024px){	
+	/****************************************************/
+	/***************    Estilos Menu          **********/
+	/****************************************************/
+	#contenedormenu{		
+		flex-direction:row;
+		padding: 1% 5%;			
+	}
+	#logo{		
+		width:18%;	
+	}
+	#cajamenu{
+		width:65%;
+		/*
+		justify-content: flex-end;
+		align-items: flex-end;
+		*/
+	}	
+	.botones-grises{
+		/*width:83%;*/
+		height: 40px;
+		/*flex-direction:row;	
+		padding: 0 0 0 2%;*/
+	}
+	/*
+	.botones-grises a{
+		flex-direction:row;
+		padding: 5px 0;
+	}
+	*/
+	.botones-grises a i{
+		font-size:26px !important;
+	}
+	.botones-grises a p{
+		font-size: 13px !important;
+	}
+	/****************************************************/
+	/*************  TIPO COVERTURAS HOME  ***************/
+	/****************************************************/
+	/*
+	#tipos-coberturas{
+		margin: -3% 4% 0 4%;
+		padding: 5% 0;
+	}
+	.titulo-covertura-home{
+		width: 60%;
+		flex-direction: row;
+		align-items: baseline;
+	}
+	*/
+	.titulo-covertura-home h1{
+		font-size: 30px;
+	}
+	/*
+	.logo-blanco{
+		width: 30%;
+	}
+	.caja-tipos-coverturas{
+		width: 75%;
+		margin: 5% auto 0 auto;
+		flex-direction: row;
+	}
+	.tipos{
+		width: 17%;
+	}
+	*/
+	.tipos p{
+		font-size: 17px;
+		margin: 20px;
+	}
+	.tipos a{
+		padding: 10px 0;
+		font-size: 17px;
+	}
+	/****************************************************/
+	/************  COBERTURAS INDUSTRIALESS  ************/
+	/****************************************************/
+	/*
+	#coberturas-industriales{
+		flex-direction: row;
+		padding: 4%;
+	}
+	.izq-industriales{
+		width: 47%;
+	}
+	.indrustriales-foto{
+		margin: 0 0 5% 0;
+	}
+	.der-industriales{
+		width: 47%;
+	}
+	.logo-industrial{
+		width: 95%;
+		margin: 5% 0 0 0;
+	}
+	*/
+	.titulo-industrial h1{
+		font-size: 30px;
+	}
+	.der-industriales p{
+		font-size: 17px;
+		/*margin: 5% 0 0 0;*/
+	}
+	/****************************************************/
+	/*****************  CARACTERISTICAS  ****************/
+	/****************************************************/
+	#caracteristicas{
+		flex-direction:row;
+		padding: 3%;
+	}
+	.colum-caracteristicas{
+		width: 30%;
+	}
+	.subtitulo-home{
+		flex-direction:row;
+		margin: 0 0 5% 0;
+	}
+	.subtitulo-home h2{
+		font-size: 22px;
+	}
+	.icono-subtitulo{
+		width: 12%;
+		/*margin: 0 0 0 10px;*/
+	}
+	.colum-caracteristicas p{
+		font-size: 17px;
+	}
+	.caja-iconos-carac{
+		flex-direction: row;
+		/*margin: 10% 0 0 0;*/
+	}
+	.item-icono-carac{
+		width: 25.7%;
+	}
+	.estructura-metalica li{
+		font-size: 17px;
+		/*margin: 0 0 30px 0;*/
+	}	
+	/****************************************************/
+	/*****************  PROYECTOS HOME  *****************/
+	/****************************************************/
+	.titulo-proyecto-home{
+		width:350px;
+	}
+	.titulo-proyecto-home h2{
+		font-size: 23px;
+	}
+	.titulo-proyecto-home h1{
+		font-size: 30px;
+	}
+	/****************************************************/
+	/********************   VIDEOS   ********************/
+	/****************************************************/
+	#videos-home{
+		padding: 4%;
+	}
+	#videos-home h1{
+		font-size: 30px;
+	}
+	.caja-videos-home{
+		flex-direction: row;
+		margin: 3% 0 0 0;
+	}
+	.item-video{
+		width: 32%;
+		border:10px solid #fff;
+	}
+	.play{
+		width: 50px;
+		height: 50px;
+		border-radius: 40px;
+		top: 35%;
+		left: 40%;
+	}
+	/****************************************************/
+	/******************   CLIENTES   ********************/
+	/****************************************************/
+	#clientes h1{
+		font-size: 30px;
+	}
+	/****************************************************/
+	/*******************   SERVICIOS   ******************/
+	/****************************************************/
+	/*
+	#limpi/eza-mantenimiento{
+		padding: 5% 0 0 4%;
+	}
+	.titulo-servicio{
+		width:580px;
+		margin: 0 auto 5% auto;
+	}
+	.titulo-servicio .subrayado{
+		margin: 3% 0;
+	}
+	*/
+	.titulo-servicio h2{		
+		font-size: 27px;		
+	}
+	.titulo-servicio h1{		
+		font-size: 30px;
+	}
+	/*
+	.caja-limpieza{
+		flex-direction: row;
+	}
+	.foto-serv{
+		width: 49%;
+		margin: 0 0 5% 0;
+	}
+	.texto-serv{
+		width: 49%;
+		padding: 0 4% 0 0;
+	}
+	*/
+	.subtitulo-servicio h1{
+		font-size: 30px;
+	}
+	.texto-serv p{
+		font-size: 18px;
+	}
+	/****************************************************/
+	/******************   FORMULARIO   ******************/
+	/****************************************************/
+	.formulario-derecha h1{
+		font-size: 30px;
+	}
+	/****************************************************/
+	/*************   TIPOS DE COBERTURAS   **************/
+	/****************************************************/
+	/*
+	#usos{
+		padding: 2% 5%; 
+	}
+	*/
+	#usos h1{
+		font-size: 30px;
+	}
+	.caja-usos{
+		width: 90%;
+		margin:2% auto;
+		flex-direction: row;
+	}
+	.caja-usos2{
+		width: 70%;
+	}
+	/*
+	.uso-cobertura{
+		width: 30%;
+	}
+	.icono-tipos{
+		width: 50%;
+	}
+	.uso-cobertura h4{
+		margin: 10px 0 0 0;
+	}
+	*/
+}
+/****************************************************/
+/****************    Estilos para 800      **********/
+/****************************************************/
+@media only screen and (max-width:800px){
+	/****************************************************/
+	/***************    Estilos Menu          **********/
+	/****************************************************/
+	#contenedormenu{		
+		flex-direction:column;
+		padding: 1% 0 0 0;	
+		top:0;
+		position: inherit;		
+	}
+	#logo{		
+		width:50%;
+		margin: auto;	
+	}
+	#cajamenu{
+		width:100%;
+		margin: 5% 0 0 0;
+		/*
+		justify-content: flex-end;
+		align-items: flex-end;
+		*/
+	}	
+	.botones-grises{		
+		width:100%;
+		height: 35px;
+		flex-direction:row;	
+		padding: 0 0 0 2%;
+		margin: 0 0 3px 0
+	}	
+	.botones-grises a{
+		width: inherit;
+		flex-direction:row;
+		padding: 5px 0;
+	}
+	.cotizar{
+		width: 40% !important;
+	} 
+	.whatsapp{
+		width: 60% !important;
+	}
+	.botones-grises a p{
+		font-size: 13px !important;
+		margin: 0 0 0 8px;
+	}
+	.iconos-contacto{
+		width: 40px;
+		border-radius: 60px;
+		padding: 3%
+	}
+	/****************************************************/
+	/*************  TIPO COVERTURAS HOME  ***************/
+	/****************************************************/
+	#tipos-coberturas{
+		margin: -3% 6% 0 6%;
+		padding: 5% 0;
+	}
+	.titulo-covertura-home{
+		width: 60%;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.titulo-covertura-home h1{
+		font-size: 25px;
+		text-align: center;
+	}
+	
+	.logo-blanco{
+		width: 150px;
+		margin: auto;
+	}
+	.caja-tipos-coverturas{
+		width: 75%;
+		margin: 5% auto 0 auto;
+		flex-direction: column;
+	}
+	.tipos{
+		width: 100%;
+		margin: 8% 0;
+	}
+	.icono-coberturas{
+		width: 60%;
+		margin: auto;
+	}
+	/*
+	.tipos p{
+		font-size: 18px;
+		margin: 20px;
+	}
+	*/
+	.tipos a{
+		width: 220px;
+		margin: auto;
+		padding: 10px 0;
+		font-size: 18px;
+	}
+	/****************************************************/
+	/************  COBERTURAS INDUSTRIALESS  ************/
+	/****************************************************/
+	#coberturas-industriales{
+		flex-direction: column;
+		padding: 5%;
+	}
+	.izq-industriales{
+		width: 100%;
+		order: 2;
+	}
+	/*
+	.indrustriales-foto{
+		margin: 0 0 5% 0;
+	}
+	*/
+	.der-industriales{
+		width: 100%;
+		order: 1;
+	}
+
+	.logo-industrial{
+		width: 70%;
+		margin: 5% 0 8% 0;
+	}
+	.titulo-industrial h1{
+		font-size: 25px;
+	}
+	.der-industriales p{
+		font-size: 15px;
+		line-height: 22px;
+		/*margin: 5% 0 0 0;*/
+	}
+	/*
+	.subrayado{
+		height: 5px;
+		margin: 6% 0;
+	}
+	*/
+	/****************************************************/
+	/*****************  CARACTERISTICAS  ****************/
+	/****************************************************/
+	#caracteristicas{
+		flex-direction:column;
+		padding: 5%;
+	}
+	.colum-caracteristicas{
+		width: 100%;
+	}
+	.subtitulo-home{
+		margin: 0 0 2% 0;
+	}
+	.subtitulo-home h2{
+		font-size: 22px;
+	}
+	.icono-subtitulo{
+		width: 10%;
+		/*margin: 0 0 0 10px;*/
+	}
+	.colum-caracteristicas p{
+		font-size: 15px;
+		line-height: 21px;
+	}	
+	.caja-iconos-carac{
+		/*flex-direction: row;*/
+		margin: 10% 0;
+	}	
+	.item-icono-carac{
+		width: 25.7%;
+	}
+	.estructura-metalica{
+		margin: 0 0 0 20px;
+	}
+	.estructura-metalica li{
+		font-size: 15px;
+		/*margin: 0 0 30px 0;*/
+	}
+	/****************************************************/
+	/*****************  PROYECTOS HOME  *****************/
+	/****************************************************/
+	#proyectos-home{
+		padding: 5%;
+	}
+	.titulo-proyecto-home{
+		width:250px;
+	}
+	.titulo-proyecto-home h2{
+		font-size: 18px;
+	}
+	.titulo-proyecto-home h1{
+		font-size: 25px;
+	}
+	/*
+	.titulo-proyecto-home .subrayado{
+		margin: 3% 0;
+	}
+	*/
+	.caja-proyectos-home{
+		flex-direction: column;
+		margin: 5% 0 3% 0;
+	}
+	.item-proyecto-home{
+		width: 80%;
+		margin: 2% auto 5% auto;
+	}	
+	#proyectos-home a{
+		width: 140px;
+		padding: 5px 0;
+		font-size: 15px;
+	}
+	/****************************************************/
+	/********************   VIDEOS   ********************/
+	/****************************************************/
+	#videos-home{
+		padding: 5%;
+	}
+	#videos-home h1{
+		font-size: 25px;
+	}
+	.caja-videos-home{
+		flex-direction: column;
+		margin: 3% 0 0 0;
+	}
+	.item-video{
+		width: 70%;
+		margin: 5% auto;
+	}
+	/*
+	.play{
+		width: 70px;
+		height: 70px;
+		border-radius: 40px;
+		top: 35%;
+		left: 40%;
+	}
+	*/
+	.play{
+		width: 50px;
+		height: 50px;
+		border-radius: 40px;
+		top: 38%;
+		left: 43%;
+		font-size: 24px;
+		text-align: center;
+		line-height: 50px;
+		color: #68127D;	
+	}
+	/****************************************************/
+	/******************   CLIENTES   ********************/
+	/****************************************************/
+	#clientes{
+		padding: 4% 5%;
+	}
+	#clientes h1{
+		font-size: 25px;
+	}
+	/*
+	.caja-clientes{
+		margin: 5% 0 0 0;
+	}
+	*/
+	/****************************************************/
+	/*****************   PIE DE PAGINA   ****************/
+	/****************************************************/
+	#piepagina{
+		flex-direction: column;
+		padding: 5% 2%;
+	}
+	.pie-izq, .pie-centro, .pie-der{
+		width: 300px;
+		margin: auto;
+	}
+	.pie-centro{
+		padding: 4% 0 0 0;
+	}
+	.logo-pie{
+		width: 70%
+	}
+	
+	.datos-pie li{
+		font-size: 16px;
+		line-height: 25px;
+	}
+	/*
+	.datos-pie li i{
+		margin-right:5px;
+		color: #671575;
+	}
+	.sangria-pie{
+		margin-left:35px; 
+	}
+	*/
+	.sociales-pie{
+		width: 120px;
+		margin: 20% 0 0 0;
+	}
+	.sociales-pie li a{
+		font-size: 20px;
+	}	
+	/****************************************************/
+	/*******************   SERVICIOS   ******************/
+	/****************************************************/
+	
+	#limpieza-mantenimiento{
+		padding: 5% 5% 0 5%;
+	}
+	.titulo-servicio{
+		width:380px;
+		margin: 0 auto 7% auto;
+	}
+	.titulo-servicio .subrayado{
+		margin: 3% 0;
+	}	
+	.titulo-servicio h2{		
+		font-size: 20px;		
+	}
+	.titulo-servicio h1{		
+		font-size: 25px;
+	}
+	
+	.caja-limpieza{
+		flex-direction: column;
+	}
+	.foto-serv{
+		width: 100%;
+		margin: 0 0 5% 0;
+		order: 2;
+	}
+	.texto-serv{
+		width: 100%;
+		padding: 0 4% 0 0;
+		order: 1;
+	}
+	
+	.subtitulo-servicio h1{
+		font-size: 25px;
+	}
+	.subtitulo-servicio .subrayado{
+		margin: 4% 0;
+	}
+	.texto-serv p{
+		font-size: 15px;
+	}
+	/****************************************************/
+	/******************   FORMULARIO   ******************/
+	/****************************************************/
+	/*
+	#formulario-serv{
+		padding: 7% 0 3% 0;
+	}
+	*/
+	.caja-formulario{
+		/*width: 92%;*/
+		padding:4%; 
+	}
+	
+	.formulario-derecha{
+		width: 100%;
+	}
+	
+	.formulario-derecha h1{
+		font-size: 25px;
+	}
+	/*
+	#fcontacto {
+	    width: 100%;
+	    margin: 2% 0;
+	}
+	#unacolum p {
+	    margin: 10px 0 0 0; 
+	}
+	#doscolums {
+	    flex-direction: row;
+	}
+	#doscolums p {
+	    width: 48%;
+	    margin: 10px 0 0 0;  
+	}
+	*/
+	.campos {
+		/*
+	    width: 48%;
+	    height: 45px;
+	    line-height: 43px;
+	    padding: 0 0 5px 10px;
+	    margin: 15px 0 0 0;
+	    */
+	    font-size: 17px;
+	}
+	.mensaje{
+		/*
+		height: 150px;
+	    margin: 30px 0 0 0;
+	    padding: 15px 0 0 20px;/
+	    */
+	    font-size: 17px;   
+	}
+	.boton-derecha{
+		justify-content: flex-end;
+	}
+	.boton{
+		padding: 1% 7%;
+		font-size: 17px;
+	}
+	/****************************************************/
+	/*************   TIPOS DE COBERTURAS   **************/
+	/****************************************************/
+	#usos{
+		padding: 8% 5%; 
+	}
+	
+	#usos h1{
+		font-size: 30px;
+	}
+	.caja-usos{
+		width: 90%;
+		margin:5% auto;
+		flex-direction: column;
+	}
+	
+	.uso-cobertura{
+		width: 100%;
+	}
+	.caja-usos2{
+		width: 90%;
+		margin:5% auto;
+		flex-direction: column;
+	}
+	.uso-cobertura2{
+		width: 100%;
+	}
+	.icono-tipos{
+		width: 50%;
+	}
+	.uso-cobertura h4{
+		margin: 10px 0 10% 0;
+	}
+	.uso-cobertura2 h4{
+		margin: 10px 0 10% 0;
+	}
+	
+}
+/****************************************************/
+/****************    Estilos para 603      **********/
+/****************************************************/
+@media only screen and (max-width:600px){
+	
+}
+/****************************************************/
+/****************    Estilos para 533      **********/
+/****************************************************/
+@media only screen and (max-width:533px){
+			
+}
+/****************************************************/
+/****************    Estilos para 480      **********/
+/****************************************************/
+@media only screen and (max-width:480px){
+	/****************************************************/
+	/***************    Estilos Menu          **********/
+	/****************************************************/
+	.botones-grises{		
+		width:100%;
+		height: 25px;
+	}	
+	.botones-grises a p{
+		font-size: 10px !important;
+	}
+	.iconos-contacto{
+		width: 30px;
+		padding: 4px
+	}
+	/****************************************************/
+	/********************   VIDEOS   ********************/
+	/****************************************************/
+	#videos-home{
+		padding: 10% 5%;
+	}
+	#videos-home h1{
+		font-size: 20px;
+	}
+	/*
+	.caja-videos-home{
+		flex-direction: column;
+		margin: 3% 0 0 0;
+	}
+	*/
+	.item-video{
+		width: 90%;
+		margin: 5% auto;
+	}
+	.play{
+		width: 50px;
+		height: 50px;
+		border-radius: 40px;
+		top: 35%;
+		left: 42%;
+	}
+	
+	/****************************************************/
+	/******************   CLIENTES   ********************/
+	/****************************************************/
+	#clientes{
+		padding: 4% 5%;
+	}
+	#clientes h1{
+		font-size: 20px;
+	}
+	/*
+	.caja-clientes{
+		margin: 5% 0 0 0;
+	}
+	*/
+	/****************************************************/
+	/*******************   SERVICIOS   ******************/
+	/****************************************************/	
+	#limpieza-mantenimiento{
+		padding: 10% 5% 5% 5%;
+	}
+	.titulo-servicio{
+		width:290px;
+		margin: 0 auto 7% auto;
+	}
+	.titulo-servicio .subrayado{
+		margin: 3% 0;
+	}	
+	.titulo-servicio h2{		
+		font-size: 16px;		
+	}
+	.titulo-servicio h1{		
+		font-size: 20px;
+	}
+	
+	.caja-limpieza{
+		margin: 15% 0 0 0;
+	}
+	/*
+	.foto-serv{
+		width: 100%;
+		margin: 0 0 5% 0;
+		order: 2;
+	}
+	.texto-serv{
+		width: 100%;
+		padding: 0 4% 0 0;
+		order: 1;
+	}
+	*/
+	.subtitulo-servicio h1{
+		font-size: 20px;
+	}
+	/*
+	.subtitulo-servicio .subrayado{
+		margin: 4% 0;
+	}
+	*/
+	.texto-serv p{
+		font-size: 14px;
+	}
+	/****************************************************/
+	/******************   FORMULARIO   ******************/
+	/****************************************************/
+	/*
+	#formulario-serv{
+		padding: 7% 0 3% 0;
+	}
+	*/
+	.caja-formulario{
+		/*width: 92%;*/
+		padding:10% 4% 7% 4%; 
+	}
+	.formulario-derecha h1{
+		font-size: 20px;
+	}
+	
+	#fcontacto {
+	    width: 100%;
+	    /*margin: 2% 0;*/
+	}
+	/*
+	#unacolum p {
+	    margin: 10px 0 0 0; 
+	}
+	*/
+	#doscolums {
+	    flex-direction:column;
+	}
+	#doscolums p {
+	    width: 100%;
+	    /*margin: 10px 0 0 0;*/  
+	}
+	
+	.campos {		
+	    width: 100%;
+	    height: 38px;
+	    line-height: 37px;
+	    /*
+	    padding: 0 0 5px 10px;
+	    margin: 15px 0 0 0;
+	    */
+	    font-size: 15px;
+	}
+	.mensaje{
+		height: 120px;
+	    margin: 10px 0 0 0;
+	    /*padding: 15px 0 0 20px;*/	    
+	    font-size: 15px;   
+	}
+	.boton{
+		padding: 1% 7%;
+		font-size: 15px;
+	}
+}
+/****************************************************/
+/****************    Estilos para 375      **********/
+/****************************************************/
+@media only screen and (max-width:375px){
+	
+}
+/****************************************************/
+/****************    Estilos para 360      **********/
+/****************************************************/
+@media only screen and (max-width:360px){
+	
+	
+	
+}
+/****************************************************/
+/****************    Estilos para 320      **********/
+/****************************************************/
+@media only screen and (max-width:320px){
+	
+	
+}
